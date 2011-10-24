@@ -1,0 +1,115 @@
+%Solicitud contrapartida de proyecto de COLCIENCIAS
+\documentclass[11pt]{article}
+\usepackage[spanish]{babel}
+%Maldito arial 12
+\usepackage[utf8]{inputenc}
+%changing the deafult fonts
+\usepackage{textcomp}
+\renewcommand{\rmdefault}{phv}
+\renewcommand{\sfdefault}{pag}
+\renewcommand{\ttdefault}{pcr}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{xcolor}
+
+\usepackage{multirow}
+\usepackage{tabularx}
+
+
+\usepackage[nomessages]{fp}
+\usepackage{cancel}
+\usepackage[colorlinks=true]{hyperref}
+%\usepackage[square,numbers]{natbib}
+%\setcitestyle{notesep={:}}
+\usepackage[punctsep]{collref}
+
+\setlength{\oddsidemargin}{-0.5cm}
+\setlength{\evensidemargin}{-0.5cm}
+\setlength{\topmargin}{-1cm}
+\setlength{\textheight}{21.5cm}
+\setlength{\textwidth}{18cm}
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+%%new comments enviorement
+\usepackage{comment}
+\includecomment{instrucciones}
+\specialcomment{instrucciones}
+{\begingroup\itshape }{ \medskip \endgroup}
+\excludecomment{instrucciones}
+
+\includecomment{ideas}
+\specialcomment{ideas}
+{\begingroup}{ \medskip \endgroup}
+\excludecomment{ideas}
+
+\includecomment{evaluacion}
+\specialcomment{evaluacion}
+{\begingroup}{ \medskip \endgroup}
+\excludecomment{evaluacion}
+
+\includecomment{gammalines}
+\specialcomment{gammalines}
+{\begingroup}{ \medskip \endgroup}
+\excludecomment{gammalines}
+
+
+\includecomment{darkmatter}
+\specialcomment{darkmatter}
+{\begingroup}{ \medskip \endgroup}
+%\excludecomment{darkmatter}
+
+\includecomment{gammalines}
+\specialcomment{gammalines}
+{\begingroup}{ \medskip \endgroup}
+\excludecomment{gammalines}
+
+
+\includecomment{proyecto}
+\specialcomment{proyecto}
+{\begingroup}{\endgroup}
+%\excludecomment{proyecto}
+
+
+\includecomment{soloproyecto}
+\specialcomment{soloproyecto}
+{\begingroup}{\endgroup}
+\excludecomment{soloproyecto}
+
+\includecomment{soloficha}
+\specialcomment{soloficha}
+{\begingroup}{\endgroup}
+%\excludecomment{soloficha}
+
+
+\includecomment{evaluador}
+\specialcomment{evaluador}
+{\begingroup}{\endgroup}
+\excludecomment{evaluador}
+
+\includecomment{ingles}
+\specialcomment{ingles}
+{\begingroup}{\endgroup}
+\excludecomment{ingles}
+
+
+\begin{document}
+\input{general}
+\input{institucion}
+\input{informacion}
+\input{diego}
+\input{nicolas}
+\input{carlos}
+\input{referencias}
+%\input{estrategia}
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "proyecto"
+%%% End: 
