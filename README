@@ -1,3 +1,5 @@
 Master file:
 $ (pdf)latex proyecto.tex
 Already configured to run in PDF mode.
+Package comments have been used to clarify several sections of the code 
+in the source file
