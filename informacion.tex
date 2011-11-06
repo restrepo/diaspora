@@ -3,7 +3,6 @@
 
 \subsection{Sector(es)  en el que se desarrolla el proyecto:}
 
-
 \subsection{Título:                                        }
 \begin{instrucciones}
   El sector puede ser alguno de los propuestos en la convocatoria
@@ -419,6 +418,7 @@ poder explicar bariogénesis a través de leptogénesis~\cite{}.
 
 
 
+
 \subsection{Justificación:                                 }
 \begin{instrucciones}
   CODI: 
@@ -619,16 +619,11 @@ presentes y futuros en las tres fronteras de la física de partículas y
 cosmologías sobre modelos que presenten una partícula candidata a
 materia oscura y la vez generen masas para los neutrinos?
  
+
 \subsection{Objetivos:                                     }
-Implementar y complementar estudios fenomenológicos de modelos de
-física más allá del Modelo Estándar, con predicciones tanto en el LHC
-como en experimentos de detección
-\begin{evaluador}
-directa o  
-\end{evaluador}
- indirecta de materia
-oscura, que den cuenta de las masas de neutrinos y que posean
-candidatos de materia oscura
+Utilizar los resultados experimentales en las fronteras de energía,
+intensidad y cósmica para restringir modelos existentes de masas y
+mezclas de neutrinos que posean algún candidato de materia oscura.
 
 \subsubsection{Objetivos específicos}
 
@@ -683,7 +678,6 @@ Estudiar sistemáticamente los modelos supersimétricos con violación bilineal 
 \item Estudiar la generación de las masas y mezclas de los neutrinos en los modelos supersimétricos con violación bilineal de paridad R y con el gravitino como materia oscura
 \item Determinar cuales serían las señales en aceleradores de los modelos supersimétricos con violación bilineal de paridad R y con el gravitino como materia oscura cuando se asume la no universalidad de las masas de los gauginos y se desprecian las restricciones provenientes de leptogénesis.
 \end{itemize}
-
 
 
 \subsection{Metodología:                                   }
@@ -763,6 +757,7 @@ con referencias concretas.
  %   \end{soloproyecto}
   \label{item:9}
 \end{enumerate}
+
 Las simulaciones se realizan con el fin de desarrollar todas las
 herramientas necesarias para que los grupos experimentales de los
 aceleradores puedan comparar los datos obtenidos con modelos
@@ -795,6 +790,7 @@ través de rayos cósmicos \cite{Choi:2010jt}.
   \ref{item:7} y \ref{item:8} de la metodología.
 \end{proyecto}
 
+
 \begin{evaluador}
   \begin{darkmatter}
   \begin{proyecto}
@@ -813,6 +809,8 @@ través de rayos cósmicos \cite{Choi:2010jt}.
 \end{proyecto}
 \end{darkmatter}
 \end{evaluador}
+
+
 
 \begin{proyecto}
   Para el modelo con con ruptura de paridad R a través de términos
@@ -843,30 +841,7 @@ proyecto solicitamos la renovación del contrato al Administrador de
 Sistemas, que dedicaría parte de su tiempo para la administración de
 CRESCA y la implementación del Grid Institucional de computación de
 alto rendimiento.
-\begin{ideas}
-  
 
-Para un modelo que incluya mecanismos de generación radiativa de masas de neutrinos se determina el espacio de parámetros compatible con los datos experimentales sobre física de neutrinos, se calculan los branchings de decaimiento y las secciones eficaces y se establecen correlaciones entre estos observables y los datos de física de neutrinos [7]. Para el caso de VBPR todo esto ya ha sido implementado en el programa computacional SPheno [8]. Finalmente se hace una simulación con PYTHIA [9] de la factibilidad de descubrir el modelo en aceleradores, como hemos venido haciendo con VBPR en [1], y de la viabilidad de medir las correlaciones establecidas, que es uno de los objetivos del proyecto.
-
-Como hemos ya hecho en [3], obtendremos resultados numéricos para los flujos de rayos cósmicos  producidos en el decaimiento del CMOI usando PYTHIA. A partir de los resultados se analizará el tiempo de vida del CMOI  en términos de su masa con el fin de obtener y analizar cuáles serían las regiones del espacio de parámetros restringidas o excluidas por los experimentos de rayos cósmicos.
-
-En este proyecto haremos una implementación del modelo de seesaw radiativo en Micromegas  con el cual se pueden hacer los cálculos de densidad de reliquia, secciones eficaces, amplitudes de decaimiento, etc. Una vez establecidas las regiones del espacio de parámetros relevantes, se procederá con el método para mecanismos de generación radiativa de masas de neutrinos descrito anteriormente.
-
-
-
-La propuesta metodológica para desarrollar este proyecto tiene las siguientes fases:
-\begin{enumerate}
-\item Considerar el Modelo Estándar supersimétrico sin conservación de la simetría paridad R.
-\item Entre los diferentes modelos supersimétricos con rotura bilineal de paridad R establecer aquellos modelos donde el gravitino sea el candidato a materia oscura. Esto es, establecer aquellos modelos bilineales donde el gravitino es la partícula supersimétrica más ligera y que posea un tiempo de vida mucho mayor a la edad del Universo. 
-\item Calcular el tiempo de vida del gravitino en función de la masa del gravitino y de los acoplamientos bilineales.  
-\item Obtener las restricciones sobre el tiempo de vida del gravitino provenientes de la búsqueda de líneas de rayos gamma realizada a partir de los datos reportados por las colaboraciones EGRET y FERMI. 
-\item Determinar cuál es la densidad de materia oscura de gravitinos en el rango de masas de gravitino $10^{-5}\lesssim m_{\tilde G}\lesssim 10$ GeV, en función de las masas de los gauginos, la temperatura de recalentamiento y la masa del gravitino. En este punto, se debe tener en cuenta que debido a las débiles interacciones del gravitino, éste no se encuentra en equilibrio térmico con el plasma primordial.
-\item Obtener la expresión para las masas de los neutrinos, generadas por los términos bilineales que violan paridad R.
-\item Establecer cuál es la relación entre la densidad reliquia de gravitinos, el tiempo de vida de los gravitinos y las masas de los neutrinos. 
-\item Determinar las implicaciones en la física de neutrinos cuando no se asume la universalidad de las masas de los gauginos. Para este fin, se tomaran valores degenerados y muy jerárquicos para las masas del bino $M_1$ y el wino $M_2$.
-\item Una vez se permitan valores bajos de la temperatura de recalentamiento $T_R<10^9$ GeV (esto es, relajando la condición de leptogénesis), determinar las implicaciones en la física de neutrinos.
-\item Considerar los decaimientos de la segunda partícula supersimétrica más ligera, que involucren a los bosones vectortiales en los estados finales, con el fin de establecer cuáles serían las señales en aceleradores cuando se asume la no universalidad de las masas de los gauginos y se desprecian las restricciones provenientes de leptogénesis.
-\end{enumerate}
 
 
 \subsection{Actividades:                                   }
