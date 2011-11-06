@@ -674,6 +674,17 @@ La diferencia de masa atmosférica al cuadrado y la longitud de
 
 \end{itemize}
 
+\subsection{Objetivo general} 
+Estudiar sistemáticamente los modelos supersimétricos con violación bilineal de paridad R y con el gravitino como materia oscura, que sean capaces de explicar la fenomenología de las oscilaciones de neutrinos, cuando no se tienen en cuenta $i)$ la leptogénesis estándar, y $ii)$ la universalidad de las masas de los gauginos. 
+\subsection{Objetivos específicos}
+\begin{itemize}
+\item Estudiar cuales serían las implicaciones en física de neutrinos cuando no se consideran las restricciones de leptogénesis en los modelos supersimétricos con violación bilineal de paridad R y con el gravitino como materia oscura. 
+\item Determinar las restricciones que imponen las recientes medidas de la emisión extragaláctica para los acoplamientos bilinelaes en los modelos con rutura bilineal de paridad R y con el gravitino como materia oscura, una vez se haya abandonado la condición de universalidad de las masas de los gauginos.
+\item Estudiar la generación de las masas y mezclas de los neutrinos en los modelos supersimétricos con violación bilineal de paridad R y con el gravitino como materia oscura
+\item Determinar cuales serían las señales en aceleradores de los modelos supersimétricos con violación bilineal de paridad R y con el gravitino como materia oscura cuando se asume la no universalidad de las masas de los gauginos y se desprecian las restricciones provenientes de leptogénesis.
+\end{itemize}
+
+
 
 \subsection{Metodología:                                   }
 \begin{instrucciones}
@@ -840,6 +851,24 @@ Para un modelo que incluya mecanismos de generación radiativa de masas de neutr
 Como hemos ya hecho en [3], obtendremos resultados numéricos para los flujos de rayos cósmicos  producidos en el decaimiento del CMOI usando PYTHIA. A partir de los resultados se analizará el tiempo de vida del CMOI  en términos de su masa con el fin de obtener y analizar cuáles serían las regiones del espacio de parámetros restringidas o excluidas por los experimentos de rayos cósmicos.
 
 En este proyecto haremos una implementación del modelo de seesaw radiativo en Micromegas  con el cual se pueden hacer los cálculos de densidad de reliquia, secciones eficaces, amplitudes de decaimiento, etc. Una vez establecidas las regiones del espacio de parámetros relevantes, se procederá con el método para mecanismos de generación radiativa de masas de neutrinos descrito anteriormente.
+
+
+
+La propuesta metodológica para desarrollar este proyecto tiene las siguientes fases:
+\begin{enumerate}
+\item Considerar el Modelo Estándar supersimétrico sin conservación de la simetría paridad R.
+\item Entre los diferentes modelos supersimétricos con rotura bilineal de paridad R establecer aquellos modelos donde el gravitino sea el candidato a materia oscura. Esto es, establecer aquellos modelos bilineales donde el gravitino es la partícula supersimétrica más ligera y que posea un tiempo de vida mucho mayor a la edad del Universo. 
+\item Calcular el tiempo de vida del gravitino en función de la masa del gravitino y de los acoplamientos bilineales.  
+\item Obtener las restricciones sobre el tiempo de vida del gravitino provenientes de la búsqueda de líneas de rayos gamma realizada a partir de los datos reportados por las colaboraciones EGRET y FERMI. 
+\item Determinar cuál es la densidad de materia oscura de gravitinos en el rango de masas de gravitino $10^{-5}\lesssim m_{\tilde G}\lesssim 10$ GeV, en función de las masas de los gauginos, la temperatura de recalentamiento y la masa del gravitino. En este punto, se debe tener en cuenta que debido a las débiles interacciones del gravitino, éste no se encuentra en equilibrio térmico con el plasma primordial.
+\item Obtener la expresión para las masas de los neutrinos, generadas por los términos bilineales que violan paridad R.
+\item Establecer cuál es la relación entre la densidad reliquia de gravitinos, el tiempo de vida de los gravitinos y las masas de los neutrinos. 
+\item Determinar las implicaciones en la física de neutrinos cuando no se asume la universalidad de las masas de los gauginos. Para este fin, se tomaran valores degenerados y muy jerárquicos para las masas del bino $M_1$ y el wino $M_2$.
+\item Una vez se permitan valores bajos de la temperatura de recalentamiento $T_R<10^9$ GeV (esto es, relajando la condición de leptogénesis), determinar las implicaciones en la física de neutrinos.
+\item Considerar los decaimientos de la segunda partícula supersimétrica más ligera, que involucren a los bosones vectortiales en los estados finales, con el fin de establecer cuáles serían las señales en aceleradores cuando se asume la no universalidad de las masas de los gauginos y se desprecian las restricciones provenientes de leptogénesis.
+\end{enumerate}
+
+
 \subsection{Actividades:                                   }
 
 \subsection{Resultados esperados:                          }
@@ -1004,9 +1033,155 @@ teóricos del Modelo Estándar. En los próximos años también se espera
 que los experimentos de detección directa, o indirecta a través de
 rayos cósmicos, entreguen una evidencia definitiva de materia oscura.
 
+Se espera que una vez realizados con éxito los objetivos trazados en este proyecto, se establezca cualés son las implicaciones que generan el abandono de la hipótesis de leptogénesis y la no universalidad de las masas de los gauginos, sobre las masas de los neutrinos en modelos con violación de paridad R y materia oscura de gravitinos. Es decir, determinar si es posible obtener un modelo con rotura bilineal de paridad R que pueda explicar la densidad de materia oscura con gravitinos, que pueda dar cuenta de los datos de física de neutrinos y que sea consistente con las restricciones provenientes de la búsqueda de de líneas de rayos gamma. 
 
 
 \subsection{Cronograma:                                    }
+\begin{instrucciones}
+  ¿La secuencia de actividades se adecúa a las fases de desarrollo del proyecto? ¿La duración en cada una de las etapas es apropiada y garantiza el cumplimiento del objetivo?
+\end{instrucciones}
+
+
+\begin{itemize}
+\item \textbf{meses 1-3} Revisión bibliográfica sobre cálculos de
+  secciones eficaces promediadas térmicamente, programas
+  computacionales para cálculos de secciones eficaces y amplitudes de
+  decaimientos, propiedades de los detectores y filtros de selección
+  de datos en el LHC, propagación de los diferentes tipos de rayos
+  cósmicos a través de la galaxia.  En esta fase también se formará el
+  estudiante de Doctorado en los tópicos específicos relativos a la
+  investigación, así como motivarle a tomar parte activa en todas las
+  fases de desarrollo del proyecto.
+
+\item \textbf{meses 3-12} Durante está fase desarrollaremos las
+  herramientas computacionales necesarias para el proyecto, y se
+  desarrollarán los cálculos analíticos necesarios.
+
+\begin{proyecto}
+  Con los colaboradores de Brasil y Valencia hemos desarrollado un
+  programa computacional en PYTHIA para calcular el nivel de precisión
+  con el que se puede llegar a medir en el LHC la correlación entre el
+  ángulo de mezcla atmosférico de neutrinos y el cociente decaimientos
+  a dos cuerpos: $\tilde\chi_1^0\to W^\pm\mu^\mp$ sobre
+  $\tilde\chi_1^0\to W^\pm\tau^\mp$, cuando el $W^\pm$ decae
+  hadrónicamente. 
+%   \begin{soloproyecto}
+% En dicho código, es necesario reconstruir la masa
+%   invariante del $W^\pm$ a partir de los jets a los que se desintegra
+%   y usar cortes específicos de aislamiento de leptones para seleccionar
+%   los $\mu$ y $\tau$ asociados a cada decaimiento del neutralino. En
+%   ésta fase se modificará el programa para establecer el nivel de
+%   precisión con la que se puede medir la correlación entre la longitud
+%   de decaimiento del neutralino con la diferencia de masa atmosférica
+%   al cuadrado.  El programa debe calcular la longitud de
+%   decaimiento $L_0$ del neutralino y su error $\Delta L_0$, donde
+%   $L_0$ está dada por
+%   \begin{align}
+%     L_0=\frac{L^{\text{lab}}}{p_{\tilde\chi_1^0}^{\text{reco}}}m_{\tilde\chi_1^0}^{\text{inv}}
+%   \end{align}
+%   con $L^{\text{lab}}$ la distancia desde el punto de interacción
+%   hasta el punto en el espacio donde decae el neutralino, $p$ y $m$
+%   son el cuadri-momentum y la masa invariante del neutralino. Para la
+%   determinación de $\Delta L_0$ debemos hacer un programa que ajuste
+%   las distribuciones gaussianas del cocientes
+%   $\frac{L^{\text{lab}}}{p_{\tilde\chi_1^0}^{\text{reco}}}$ y de la
+%   masa invariante $m_{\tilde\chi_1^0}^{\text{inv}}$. Similarmente, para
+%   calcular el nivel de precisión con el que se puede llegar a medir la
+%   correlación entre el ángulo de mezcla solar con los decaimientos a
+%   tres cuerpos mediados por sfermiones con muones y electrones en los
+%   estados finales, debemos modificar el programa para reconstruir este
+%   tipo de decaimientos a tres cuerpos.    
+%   \end{soloproyecto}
+En ésta fase se modificará el programa para implementar las nuevas correlaciones propuestas.
+\end{proyecto}
+
+\begin{proyecto}
+  Para el caso en que el gravitino es la LSP debemos modificar el
+  programa para calcular las correlaciones con base en la NLSP
+  teniendo en cuenta los nuevos canales en las cuales la NLSP puede
+  decaer al gravitino
+\end{proyecto}
+
+
+\begin{proyecto}
+  En ésta parte del proceso se establecerán las condiciones sobre los
+  cuatro cargas $H$ libres del modelo estándar supersimétrico con una
+  simetría $U(1)_H$ con el fin de obtener un modelo de violación de
+  número leptónico a través de términos trilineales $\lambda$ y con generación de masas de neutrinos.
+% Usando
+%   las restricciones experimentales sobre los acoplamientos
+%   individuales $\lambda$~\cite{Barbier:2004ez}, se establecerán las
+%   posibles señales de decaimiento de la partícula supersimétrica más
+%   liviana, que permitan comprobar el modelo propuesto en el
+%   LHC. Adicionalmente se implementará el mecanismo seesaw para
+%   explicar las masas y mezclas de neutrinos, introduciendo nuevos
+%   flavones de carga fraccionaria.  En ésta parte se analizará de forma
+%   sistemática las asignaciones de carga que permitan la generación de
+%   texturas adecuadas de masas de neutrinos y a la vez mantengan
+%   prohibidos los otros términos de ruptura de paridad R. De acuerdo a
+%   exploraciones iniciales esperamos que en este caso la LSP deba ser
+%   un gravitino si se quiere mantener un candidato a materia oscura
+%   inestable. Para explorar las restricciones de los datos de
+%   detección indirecta, se establecerá el background de rayos cósmicos,
+%   asumiendo que las anomalías actuales se pueden explicar a partir de
+%   fenómenos astrofísicos. Se hará una programa de simulación en
+%   \texttt{Pythia} \cite{Sjostrand:2006za} para calcular el flujo de
+%   positrones, y electrones, y se comparará con el background
+%   astrofísico para establecer las regiones de tiempo de vida media y
+%   masas de gravitinos que se pueden excluir a partir del los datos
+%   actuales. También se evaluará el impacto de las futuras medidas de
+%   positrones y electrones por parte PAMELA~\cite{Adriani:2008zr},
+%   Fermi--LAT\cite{Abdo:2009zk} y AMS-02~\cite{ams:2009} en los modelos
+%   estudiados. Es de resaltar que la simetría horizontal sólo permite
+%   la aparición de términos $\lambda$ con los tres índices diferentes
+%   por lo que los decaimientos del gravitino no pueden generar rayos
+%   gamma.
+\end{proyecto}
+
+\begin{evaluador}
+  \begin{darkmatter}
+\begin{proyecto}
+  Para el seesaw radiativo, implementaremos el modelo en MicrOMEGAS.
+% escribiremos el Lagrangiano del modelo el
+%   lenguaje de programación LanHEP~\cite{Semenov:2008jy}. Con este
+%   programa podremos generar las cuatro tablas en el formato de
+%   CalcHEP~\cite{Pukhov:2004ca}, el cual podemos usar para calcular las
+%   secciones eficaces y las amplitudes de decaimiento del modelo.  Como
+%   MicrOMEGAS usa internamente CalcHEP, también podremos calcular la
+%   densidad de reliquia y la sección eficaz WIMP-nucleón del
+%   modelo. Debemos crear también una interfase en Python para hacer los
+%   llamados a los diferentes cálculos y para implementar las regiones
+%   del espacio de parámetros que son compatibles con los datos de
+%   oscilaciones de neutrinos. Paralelamente debemos hacer cálculos
+%   analíticos de las secciones eficaces promediadas térmicamente para
+%   estar seguros que los resultados de MicroMEGAS son correctos.
+\end{proyecto}
+\end{darkmatter}
+\end{evaluador}
+
+\item \textbf{meses 12-18} En esta parte se obtendrán y analizarán los
+  resultados numéricos de los modelos bajo consideración. El
+  estudiante de doctorado realizará su pasantía doctoral en un Grupo
+  de Investigación europeo. En está parte evaluaremos que resultados
+  presentar en éste proyecto, e iniciaremos la redacción de la
+  continuación del proyecto para presentar ante COLCIENCIAS. 
+
+\item \textbf{meses 18-24} En esta parte se prepararán los artículos
+  para publicación con base en los resultados obtenidos. Uno sobre el
+  nivel de precisión con la que se pueden medir correlaciones nueval
+  del modelo de ruptura bilinea de paridad R en el LHC, y otra sobre
+  la formulación de un modelo consistente de ruptura trilineal de
+  paridad $R$ con términos $\lambda$, con el gravitino como materia
+  oscura inestable.
+
+
+  Se escribirá el artículo de divulgación sobre resultados recientes
+  del LHC, que para la época estará brindando resultados definitivos
+  de la búsqueda del Higgs hasta una masa de 600 GeV.
+
+  Se presentarán los resultados en una conferencia internacional y se
+  preparará el informe final del proyecto.
+\end{itemize}
 
 \subsection{Equipo de trabajo:}
 \begin{tabular}{|l|l|l|l|}\hline
