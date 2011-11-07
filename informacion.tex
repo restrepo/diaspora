@@ -718,14 +718,16 @@ mezclas de neutrinos que posean algún candidato de materia oscura.
 %Final
 A continuación se demuestra la metodología a seguir a la hora de
 analisar las predicciones, o establecer las restricciones, de un
-modelo de nueva física, usando como paradigma el modelo con ruptura
-bilineal de paridad R y ejemplificando cada paso con referencias
-concretas.
+modelo de nueva física que explique las masas y mezclas de neutrinos,
+o tenga un candidato de materia oscura estable o intestable. Para
+ello usaremos como paradigma el trabajo que hemos venido realizando
+con modelo con ruptura bilineal de paridad R y ejemplificando cada
+paso con referencias concretas.
 \begin{enumerate}
 \item Se construye un modelo que solucione un problema fenomenológico
   del modelo estándar, como el problema de las masas de neutrinos
   \cite{Hirsch:2000ef}, o la materia oscura (o ambos
-  \cite{Hirsch:2005ag,Diaz:2003as}), mostrando bajo que mecanismo
+  \cite{Hirsch:2005ag,Restrepo:2011rj}), mostrando bajo que mecanismo
   específico se soluciona el problema en cuestión. La solución del
   problema requiere introducir partículas adicionales las cuales
   pueden buscarse en detectores de partículas en las fronteras de
@@ -734,12 +736,12 @@ concretas.
 \item Se determina el espacio de parámetros compatible con los datos
   experimentales, se calculan los branchings de decaimiento y las
   secciones eficaces y se establecen correlaciones entre estos
-  observables en aceleradores con otros observables. En el caso de
-  modelos con mecanismos de generación radiativa de masas de neutrinos
-  las correlaciones se buscan con los datos de oscilaciones de
-  neutrinos \cite{Diaz:2003as}, y en el caso de materia oscura con
-  experimentos de detección directa e indirecta
-  \cite{Choi:2010xn,Diaz:2003as}.
+  observables en la frontera de energía con otros observables en la
+  frontera de intensidad y cósmica. En el caso de modelos con
+  mecanismos de generación radiativa de masas de neutrinos las
+  correlaciones se buscan con los datos de oscilaciones de neutrinos
+  \cite{Diaz:2003as}, y en el caso de materia oscura con experimentos
+  de detección directa e indirecta \cite{Choi:2010xn,Restrepo:2011rj}.
   \label{item:6}
 \item Se desarrolla un programa computacional que dado los parámetros
   de entrada del modelo entregue las secciones eficaces y los
@@ -748,7 +750,9 @@ concretas.
   de generación de eventos como PYTHIA \cite{Sjostrand:2006za}. El
   modelo con ruptura bilineal de paridad R ha sido implementado en el
   programa computacional SPheno~\cite{Porod:2003um} (el cual tiene
-  implementado el formato de salida SLHA version 2).
+  implementado el formato de salida SLHA version 2). Modelos con un
+  candidato de materia oscura estable bajo una simetría $Z_2$ pueden
+  ser implementados en microMEGAs~\cite{Belanger:2006is}.
   \label{item:7}
 \item Se divide el espacio de n-parámetros establecido en el paso
   \ref{item:6} en una malla n-dimensional. Para cada punto se corre el
@@ -759,24 +763,19 @@ concretas.
   geometría y características de detectores específicos, para
   determinar la factibilidad de descubrir las señales en aceleradores
   \cite{Magro:2003zb,deCampos:2005ri,deCampos:2007bn,deCampos:2008ic,deCampos:2008re},
-  o en experimentos de detección directa o indirecta
-  \cite{Choi:2010xn} de materia oscura. Este paso requiere de
-  herramientas de computación de alto rendimiento en clusters de
-  computadores.
+  o en experimentos de detección indirecta \cite{Choi:2010xn} de
+  materia oscura. En el caso de detección directa el número esperado
+  de eventos puede calcularse directamente con microMEGAs. Este paso
+  requiere normalmente herramientas de computación distribuida en
+  clusters de computadores.
   \label{item:8}
 \item Como modelos muy diferentes pueden dar lugar a las mismas
   señales en detectores, se debe hacer también simulaciones en PYTHIA
   del nivel de precisión con el que se pueden determinar observables
-  en aceleradores que se puedan correlacionar con observables de otros
+  en los experimentos de la frontera de energía que se puedan
+  correlacionar con observables en los experimentos de las fronteras
+  de intensidad y cósmica.
   experimentos.
- % \begin{soloproyecto}
- %    A partir del valor experimental del ángulo de mezcla
- %  atmosférico, en el modelo con ruptura bilineal de paridad R por
- %  ejemplo, se predice que el decaimiento del neutralino a muon W, debe
- %  ser muy similar al decaimiento del neutralino a tau W. En
- %  \cite{DeCampos:2010yu} hemos determinado el nivel de precisión con
- %  el que se pude medir esta correlación en el detector ATLAS del LHC.
- %   \end{soloproyecto}
   \label{item:9}
 \end{enumerate}
 
@@ -787,15 +786,25 @@ específicos y puedan descubrir o poner cotas sobre las nuevas
 partículas propuestas. En el caso de detección directa o indirecta de
 materia oscura donde las señales están preestablecidas, la
 simulaciones se realizan para poder comparar con los datos obtenidos o
-que se pueden llegar a obtener. En el caso del modelo con ruptura
-bilineal de paridad R, ya se han hecho búsquedas en
-Tevatron~\cite{Brigliadori:2008vf} y se están implementando búsquedas
-con datos reales en el LHC en grupos de trabajo de ATLAS y
-LHCb. Además se han establecido la posibles señales que se pueden
-observar en experimentos de detección indirecta de materia oscura a
-través de rayos cósmicos \cite{Choi:2010jt}.
+que se pueden llegar a obtener. Es así como el trabajo fenomenológico
+realizado alrededor del modelo BRpV ya ha dado sus frutos al estar ya
+en las agendas de búsqueda de los grupos experimentales del
+Tevatron~\cite{Brigliadori:2008vf} y el LHC~\cite{:2011iu}. Esperamos
+que con este proyecto se pueda llegar al mismo nivel de relación de
+teoría y experimento con otras extensiones del modelo estándar que
+también explican las masas y mezclas de neutrinos y tienen candidatos
+de materia oscura.
 
-\begin{proyecto}
+
+
+\begin{gravitinodm}
+  En el modelo donde la ruptura de paridad R a través de operadores
+  que violan número leptónico puede explicar la densidad de reliquia
+  de materia oscura cuando la LSP es el gravitino se realizaran los
+  pasos \ref{item:7} y \ref{item:8} de la metodología.
+\end{gravitinodm}
+
+\begin{brpvlhc}
   En el marco de este proyecto se simularán dos correlaciones
   adicionales que existen en el modelo con ruptura bilineal de paridad R:
   Cuando el neutralino es la LSP, los decaimientos a tres cuerpos
@@ -803,15 +812,14 @@ través de rayos cósmicos \cite{Choi:2010jt}.
   finales, están correlaciones con el ángulo de mezcla solar, y la
   longitud de decaimiento del neutralino está correlacionada con la
   diferencia de masa atmosférica.
-\end{proyecto}
+\end{brpvlhc}
 
-\begin{proyecto}
-  En el modelo donde la ruptura bilineal de paridad R puede explicar
-  tanto las masas de neutrinos como la densidad de reliquia de materia
-  oscura cuando la LSP es el gravitino se realizaran los pasos
-  \ref{item:7} y \ref{item:8} de la metodología.
-\end{proyecto}
-
+\begin{bbrpvlhc}
+   Se estudiará además como estas predicciones, correlaciones y
+   restricciones se mantienen o relajan cuando se consideran
+   extensiones más del modelo BRpV en términos de operadores no
+   renormalizables de dimensión cinco y violación de número leptónico.  
+\end{bbrpvlhc}
 
 \begin{darkmatter}
   Para el seesaw radiativo, en la literatura básicamente sólo se ha
@@ -830,15 +838,6 @@ través de rayos cósmicos \cite{Choi:2010jt}.
 
 
 
-\begin{proyecto}
-  Para el modelo con con ruptura de paridad R a través de términos
-  trilineales del tipo $\lambda$, sólo hemos realizado el paso
-  \ref{item:5}, como un modelo que contiene un candidato inestable de
-  materia oscura que explica el exceso de positrones observado por
-  PAMELA. En este proyecto queremos adicionar al modelo la posibilidad
-  de explicar las masas y mezclas de neutrinos y avanzar en los demás
-  pasos de la metodología.
-\end{proyecto}
 
 A través de todo el proyecto se requiere de una infraestructura de
 computación de alto rendimiento adecuada, que garantice una
@@ -855,10 +854,12 @@ servicio de computación científica.  Una de las metas prioritarias es
 la unificar el poder de computo de los Grupos de Investigación de la
 Universidad, como el servidor Blade del grupo, en un Grid
 Institucional que la vez éste conectado con Grid-Colombia. En el
-proyecto solicitamos la renovación del contrato al Administrador de
-Sistemas, que dedicaría parte de su tiempo para la administración de
-CRESCA y la implementación del Grid Institucional de computación de
-alto rendimiento.
+proyecto solicitamos, además de los recursos para seguir mejorando la
+infraestructura tecnológica a través de nodos Blade que soporten la
+arquitectura CUDA para computación distribuida a través de GPU, la
+contratación de un Administrador de Sistemas, que dedicaría parte de
+su tiempo para la administración de CRESCA y la implementación del
+Grid Institucional de computación de alto rendimiento.
 
 
 
@@ -930,42 +931,19 @@ cuantitativos verificables as\'\i:
 \end{instrucciones}
 
 
-Nos encontramos en una época única en la que se esperan grandes
-descubrimientos en el área de física de altas energías.
-\begin{soloproyecto}
-El LHC ha
-comenzado a explorar la escala del TEV desde el 2010. Hasta el 2012
-estará acumulando datos a 7\,TeV de energía de centro de masa, y a
-partir del 2014 comenzará a funcionar a su energía de diseño de 14
-TeV. El satélite Planck fue lanzado en el 2009 y se espera que
-entregue datos definitivos sobre los parámetros astronómicos en el
-2012. La misión complementará y mejorará las observaciones hechas por
-el WMAP. Éste año, XENON100 ha entregado sus primeros datos que
-comienzan a restringir las regiones del espacio de parámetros de
-algunos modelos de materia oscura, y para el 2015 se espera que los
-datos de XENON1T cubran completamente la región de materia oscura
-predicha por el MSSM restringido. AMS-02 es un detector de rayos
-cósmicos que será llevado a la estación espacial internacional a bordo
-de la última misión del transbordador Endeavor el 29 de abril de
-2011. Se espera que compruebe y mejore las medidas de PAMELA sobre
-exceso en el flujo de positrones de rayos cósmicos.  
-\end{soloproyecto}
- Hemos entrado en
-una nueva era de la física que, de obtener los resultados esperados,
-combinaría los descubrimientos de nuevas partículas, a los cada vez
-mejor establecidos resultados de física de neutrinos y observaciones
-cosmológicas sobre materia oscura. El resultado de este proyecto es
-aportar a esta área de la ciencia con nuevas propuestas de señales
-para ser buscadas en estos detectores (subterráneos y en el espacio) y
-con la interpretación de los resultados que surjan de ellos en
-términos de los modelos propuestos, en los cuales se añaden partículas
-nuevas al modelo estándar de la partículas elementales. Estos
-resultados se reflejarán en la publicación de al menos dos artículos
-científicos en el área con la participación de un estudiante de
-Doctorado, y en la presentación de los resultados en al menos una
-conferencia internacional. Además de dar pie a la formulación de
-nuevos proyectos de investigación para ser presentado en convocatorias
-externas.
+Hemos entrado en una nueva era de la física que, de obtener los
+resultados esperados, combinaría los descubrimientos de nuevas
+partículas, a los cada vez mejor establecidos resultados de física de
+neutrinos y observaciones cosmológicas sobre materia oscura. El
+resultado de este proyecto es aportar a esta área de la ciencia con
+nuevas propuestas de señales para ser buscadas en estos detectores
+(subterráneos y en el espacio) y con la interpretación de los
+resultados que surjan de ellos en términos de los modelos propuestos,
+en los cuales se añaden partículas nuevas al modelo estándar de la
+partículas elementales. Estos resultados se reflejarán en la
+publicación de al menos tres artículos científicos en el área con la
+participación de un estudiante de Doctorado, y en la presentación de
+los resultados en al menos una conferencia internacional.
 
 
 De especial importancia es el nuevo paradigma científico que surgirá
@@ -988,7 +966,7 @@ a la interpretación de la energía oscura como la causante de la
 expansión acelerada del Universo. El otro escenario posible en el que
 no se encuentre al Higgs del modelo estándar, debe dar lugar a datos
 experimentales suficientes para dilucidar cual es realmente el
-mecanismo de ruptura de la simetría electrodébil. Nuestro grupo es el
+mecanismo de rotura de la simetría electrodébil. Nuestro grupo es el
 más directamente llamado a difundir estos avances en nuestro entorno social,
 como lo ha venido haciendo a través de conferencias y cursos de
 extensión en los últimos años. Es importante que nuestro país siga
@@ -1026,7 +1004,31 @@ teóricos del Modelo Estándar. En los próximos años también se espera
 que los experimentos de detección directa, o indirecta a través de
 rayos cósmicos, entreguen una evidencia definitiva de materia oscura.
 
-Se espera que una vez realizados con éxito los objetivos trazados en este proyecto, se establezca cualés son las implicaciones que generan el abandono de la hipótesis de leptogénesis y la no universalidad de las masas de los gauginos, sobre las masas de los neutrinos en modelos con violación de paridad R y materia oscura de gravitinos. Es decir, determinar si es posible obtener un modelo con rotura bilineal de paridad R que pueda explicar la densidad de materia oscura con gravitinos, que pueda dar cuenta de los datos de física de neutrinos y que sea consistente con las restricciones provenientes de la búsqueda de de líneas de rayos gamma. 
+\begin{gravitinodm}
+  Se espera que una vez realizados con éxito los objetivos trazados en
+  este proyecto, se establezca cualés son las implicaciones que
+  generan el abandono de la hipótesis de leptogénesis y la no
+  universalidad de las masas de los gauginos, sobre las masas de los
+  neutrinos en modelos con violación de paridad R y materia oscura de
+  gravitinos. Es decir, determinar si es posible obtener un modelo con
+  rotura bilineal de paridad R que pueda explicar la densidad de
+  materia oscura con gravitinos, que pueda dar cuenta de los datos de
+  física de neutrinos y que sea consistente con las restricciones
+  provenientes de la búsqueda de de líneas de rayos
+  gamma.
+\end{gravitinodm}
+
+\begin{bbrpvlhc}
+....  
+\end{bbrpvlhc}
+
+\begin{brpvlhc}
+  ...
+\end{brpvlhc}
+
+\begin{darkmatter}
+  ....
+\end{darkmatter}
 
 
 \subsection{Cronograma:                                    }
@@ -1050,122 +1052,56 @@ Se espera que una vez realizados con éxito los objetivos trazados en este proye
   herramientas computacionales necesarias para el proyecto, y se
   desarrollarán los cálculos analíticos necesarios.
 
-\begin{proyecto}
+\begin{brpvlhc}
   Con los colaboradores de Brasil y Valencia hemos desarrollado un
   programa computacional en PYTHIA para calcular el nivel de precisión
   con el que se puede llegar a medir en el LHC la correlación entre el
   ángulo de mezcla atmosférico de neutrinos y el cociente decaimientos
   a dos cuerpos: $\tilde\chi_1^0\to W^\pm\mu^\mp$ sobre
   $\tilde\chi_1^0\to W^\pm\tau^\mp$, cuando el $W^\pm$ decae
-  hadrónicamente. 
-%   \begin{soloproyecto}
-% En dicho código, es necesario reconstruir la masa
-%   invariante del $W^\pm$ a partir de los jets a los que se desintegra
-%   y usar cortes específicos de aislamiento de leptones para seleccionar
-%   los $\mu$ y $\tau$ asociados a cada decaimiento del neutralino. En
-%   ésta fase se modificará el programa para establecer el nivel de
-%   precisión con la que se puede medir la correlación entre la longitud
-%   de decaimiento del neutralino con la diferencia de masa atmosférica
-%   al cuadrado.  El programa debe calcular la longitud de
-%   decaimiento $L_0$ del neutralino y su error $\Delta L_0$, donde
-%   $L_0$ está dada por
-%   \begin{align}
-%     L_0=\frac{L^{\text{lab}}}{p_{\tilde\chi_1^0}^{\text{reco}}}m_{\tilde\chi_1^0}^{\text{inv}}
-%   \end{align}
-%   con $L^{\text{lab}}$ la distancia desde el punto de interacción
-%   hasta el punto en el espacio donde decae el neutralino, $p$ y $m$
-%   son el cuadri-momentum y la masa invariante del neutralino. Para la
-%   determinación de $\Delta L_0$ debemos hacer un programa que ajuste
-%   las distribuciones gaussianas del cocientes
-%   $\frac{L^{\text{lab}}}{p_{\tilde\chi_1^0}^{\text{reco}}}$ y de la
-%   masa invariante $m_{\tilde\chi_1^0}^{\text{inv}}$. Similarmente, para
-%   calcular el nivel de precisión con el que se puede llegar a medir la
-%   correlación entre el ángulo de mezcla solar con los decaimientos a
-%   tres cuerpos mediados por sfermiones con muones y electrones en los
-%   estados finales, debemos modificar el programa para reconstruir este
-%   tipo de decaimientos a tres cuerpos.    
-%   \end{soloproyecto}
-En ésta fase se modificará el programa para implementar las nuevas correlaciones propuestas.
-\end{proyecto}
+  hadrónicamente.  En ésta fase se modificará el programa para
+  implementar las nuevas correlaciones propuestas.
+\end{brpvlhc}
 
-\begin{proyecto}
+\begin{darkmatter}
   Para el caso en que el gravitino es la LSP debemos modificar el
   programa para calcular las correlaciones con base en la NLSP
   teniendo en cuenta los nuevos canales en las cuales la NLSP puede
   decaer al gravitino
-\end{proyecto}
-
-
-\begin{proyecto}
-  En ésta parte del proceso se establecerán las condiciones sobre los
-  cuatro cargas $H$ libres del modelo estándar supersimétrico con una
-  simetría $U(1)_H$ con el fin de obtener un modelo de violación de
-  número leptónico a través de términos trilineales $\lambda$ y con generación de masas de neutrinos.
-% Usando
-%   las restricciones experimentales sobre los acoplamientos
-%   individuales $\lambda$~\cite{Barbier:2004ez}, se establecerán las
-%   posibles señales de decaimiento de la partícula supersimétrica más
-%   liviana, que permitan comprobar el modelo propuesto en el
-%   LHC. Adicionalmente se implementará el mecanismo seesaw para
-%   explicar las masas y mezclas de neutrinos, introduciendo nuevos
-%   flavones de carga fraccionaria.  En ésta parte se analizará de forma
-%   sistemática las asignaciones de carga que permitan la generación de
-%   texturas adecuadas de masas de neutrinos y a la vez mantengan
-%   prohibidos los otros términos de ruptura de paridad R. De acuerdo a
-%   exploraciones iniciales esperamos que en este caso la LSP deba ser
-%   un gravitino si se quiere mantener un candidato a materia oscura
-%   inestable. Para explorar las restricciones de los datos de
-%   detección indirecta, se establecerá el background de rayos cósmicos,
-%   asumiendo que las anomalías actuales se pueden explicar a partir de
-%   fenómenos astrofísicos. Se hará una programa de simulación en
-%   \texttt{Pythia} \cite{Sjostrand:2006za} para calcular el flujo de
-%   positrones, y electrones, y se comparará con el background
-%   astrofísico para establecer las regiones de tiempo de vida media y
-%   masas de gravitinos que se pueden excluir a partir del los datos
-%   actuales. También se evaluará el impacto de las futuras medidas de
-%   positrones y electrones por parte PAMELA~\cite{Adriani:2008zr},
-%   Fermi--LAT\cite{Abdo:2009zk} y AMS-02~\cite{ams:2009} en los modelos
-%   estudiados. Es de resaltar que la simetría horizontal sólo permite
-%   la aparición de términos $\lambda$ con los tres índices diferentes
-%   por lo que los decaimientos del gravitino no pueden generar rayos
-%   gamma.
-\end{proyecto}
-
-\begin{evaluador}
-  \begin{darkmatter}
-\begin{proyecto}
-  Para el seesaw radiativo, implementaremos el modelo en MicrOMEGAS.
-% escribiremos el Lagrangiano del modelo el
-%   lenguaje de programación LanHEP~\cite{Semenov:2008jy}. Con este
-%   programa podremos generar las cuatro tablas en el formato de
-%   CalcHEP~\cite{Pukhov:2004ca}, el cual podemos usar para calcular las
-%   secciones eficaces y las amplitudes de decaimiento del modelo.  Como
-%   MicrOMEGAS usa internamente CalcHEP, también podremos calcular la
-%   densidad de reliquia y la sección eficaz WIMP-nucleón del
-%   modelo. Debemos crear también una interfase en Python para hacer los
-%   llamados a los diferentes cálculos y para implementar las regiones
-%   del espacio de parámetros que son compatibles con los datos de
-%   oscilaciones de neutrinos. Paralelamente debemos hacer cálculos
-%   analíticos de las secciones eficaces promediadas térmicamente para
-%   estar seguros que los resultados de MicroMEGAS son correctos.
-\end{proyecto}
 \end{darkmatter}
-\end{evaluador}
+
+
+
+\begin{darkmatter}
+  Para el seesaw radiativo, implementaremos el modelo en MicrOMEGAS.
+escribiremos el Lagrangiano del modelo el
+  lenguaje de programación LanHEP~\cite{Semenov:2008jy}. Con este
+  programa podremos generar las cuatro tablas en el formato de
+  CalcHEP~\cite{Pukhov:2004ca}, el cual podemos usar para calcular las
+  secciones eficaces y las amplitudes de decaimiento del modelo.  Como
+  MicrOMEGAS usa internamente CalcHEP, también podremos calcular la
+  densidad de reliquia y la sección eficaz WIMP-nucleón del
+  modelo. Debemos crear también una interfase en Python para hacer los
+  llamados a los diferentes cálculos y para implementar las regiones
+  del espacio de parámetros que son compatibles con los datos de
+  oscilaciones de neutrinos. Paralelamente debemos hacer cálculos
+  analíticos de las secciones eficaces promediadas térmicamente para
+  estar seguros que los resultados de MicroMEGAS son correctos.
+\end{darkmatter}
 
 \item \textbf{meses 12-18} En esta parte se obtendrán y analizarán los
   resultados numéricos de los modelos bajo consideración. El
   estudiante de doctorado realizará su pasantía doctoral en un Grupo
   de Investigación europeo. En está parte evaluaremos que resultados
-  presentar en éste proyecto, e iniciaremos la redacción de la
-  continuación del proyecto para presentar ante COLCIENCIAS. 
+  presentar en éste proyecto.
 
 \item \textbf{meses 18-24} En esta parte se prepararán los artículos
   para publicación con base en los resultados obtenidos. Uno sobre el
   nivel de precisión con la que se pueden medir correlaciones nueval
-  del modelo de ruptura bilinea de paridad R en el LHC, y otra sobre
+  del modelo de ruptura bilineal de paridad R en el LHC, y otra sobre
   la formulación de un modelo consistente de ruptura trilineal de
-  paridad $R$ con términos $\lambda$, con el gravitino como materia
-  oscura inestable.
+  paridad $R$ con operadores de violación de número leptónico, con el
+  gravitino como materia oscura inestable.
 
 
   Se escribirá el artículo de divulgación sobre resultados recientes
