@@ -458,6 +458,12 @@ mezclas de neutrinos y que contienen un candidato de materia oscura
 con predicciones concretas para los experimentos presentes y futuros
 en las tres fronteras de la física de partículas y la cosmología.
 
+Con éste proyecto queremos beneficiarnos de la experiencia y capacidad
+de reconocidos científicos colombianos que trabajan en instituciones
+de primera línea en el exterior para ampliar los horizontes
+investigativos del país y poder participar más activamente en las
+fronteras de investigación de la física de partículas y cosmología.
+
 
 Hemos estudiado exhaustivamente las predicciones del modelo con
 ruptura bilineal de paridad R, BRpV, que incluye sólo los tres
@@ -627,7 +633,12 @@ mezclas de neutrinos que posean algún candidato de materia oscura.
 
 \subsubsection{Objetivos específicos}
 
+
 \begin{itemize}
+\item Consolidar y ampliar las líneas de investigación en las tres
+  fronteras de la física de partículas y cosmología en el país,
+  aprovechando la experiencia y capacidades de los investigadores
+  colombianos trabajando en el exterior que participan en el proyecto.
 \item 
 \begin{gravitinodm}
   Construir un programa computacional que incluya todos los
@@ -864,6 +875,9 @@ Grid Institucional de computación de alto rendimiento.
 
 
 \subsection{Actividades:                                   }
+Las actividades a desarrollar durante el proyectos consistirán en
+pasantías, visitas y la organización de un taller sobre herramientas de
+computación científica en física de altas energías.
 
 \subsection{Resultados esperados:                          }
 \begin{instrucciones}
@@ -1004,6 +1018,10 @@ teóricos del Modelo Estándar. En los próximos años también se espera
 que los experimentos de detección directa, o indirecta a través de
 rayos cósmicos, entreguen una evidencia definitiva de materia oscura.
 
+Se espera que una vez realizados con éxito los objetivos trazados en
+este proyecto, se amplien las líneas de investigación 
+
+
 \begin{gravitinodm}
   Se espera que una vez realizados con éxito los objetivos trazados en
   este proyecto, se establezca cualés son las implicaciones que
@@ -1011,19 +1029,18 @@ rayos cósmicos, entreguen una evidencia definitiva de materia oscura.
   universalidad de las masas de los gauginos, sobre las masas de los
   neutrinos en modelos con violación de paridad R y materia oscura de
   gravitinos. Es decir, determinar si es posible obtener un modelo con
-  rotura bilineal de paridad R que pueda explicar la densidad de
-  materia oscura con gravitinos, que pueda dar cuenta de los datos de
-  física de neutrinos y que sea consistente con las restricciones
-  provenientes de la búsqueda de de líneas de rayos
-  gamma.
+  operadores de rotura de paridad R hasta dimensión cinco, que puedan
+  explicar la densidad de materia oscura con gravitinos, dar cuenta de
+  los datos de física de neutrinos y sea consistente con las
+  restricciones provenientes de rayos cósmicos.
 \end{gravitinodm}
 
 \begin{bbrpvlhc}
-....  
+....
 \end{bbrpvlhc}
 
 \begin{brpvlhc}
-  ...
+  ..
 \end{brpvlhc}
 
 \begin{darkmatter}
@@ -1033,22 +1050,23 @@ rayos cósmicos, entreguen una evidencia definitiva de materia oscura.
 
 \subsection{Cronograma:                                    }
 \begin{instrucciones}
+Duración máxima 18 meses
   ¿La secuencia de actividades se adecúa a las fases de desarrollo del proyecto? ¿La duración en cada una de las etapas es apropiada y garantiza el cumplimiento del objetivo?
 \end{instrucciones}
 
 
 \begin{itemize}
-\item \textbf{meses 1-3} Revisión bibliográfica sobre cálculos de
+\item \textbf{meses 1-3:} Revisión bibliográfica sobre cálculos de
   secciones eficaces promediadas térmicamente, programas
   computacionales para cálculos de secciones eficaces y amplitudes de
   decaimientos, propiedades de los detectores y filtros de selección
   de datos en el LHC, propagación de los diferentes tipos de rayos
-  cósmicos a través de la galaxia.  En esta fase también se formará el
-  estudiante de Doctorado en los tópicos específicos relativos a la
+  cósmicos a través de la galaxia.  En esta fase también se formarán los
+  estudiantes  de maestría Doctorado en los tópicos específicos relativos a la
   investigación, así como motivarle a tomar parte activa en todas las
   fases de desarrollo del proyecto.
 
-\item \textbf{meses 3-12} Durante está fase desarrollaremos las
+\item \textbf{meses 3-6} Durante está fase desarrollaremos las
   herramientas computacionales necesarias para el proyecto, y se
   desarrollarán los cálculos analíticos necesarios.
 
@@ -1063,64 +1081,67 @@ rayos cósmicos, entreguen una evidencia definitiva de materia oscura.
   implementar las nuevas correlaciones propuestas.
 \end{brpvlhc}
 
-\begin{darkmatter}
+\begin{gravitinodm}
   Para el caso en que el gravitino es la LSP debemos modificar el
   programa para calcular las correlaciones con base en la NLSP
   teniendo en cuenta los nuevos canales en las cuales la NLSP puede
-  decaer al gravitino
-\end{darkmatter}
+  decaer al gravitino.
+\end{gravitinodm}
 
 
 
 \begin{darkmatter}
-  Para el seesaw radiativo, implementaremos el modelo en MicrOMEGAS.
-escribiremos el Lagrangiano del modelo el
-  lenguaje de programación LanHEP~\cite{Semenov:2008jy}. Con este
-  programa podremos generar las cuatro tablas en el formato de
-  CalcHEP~\cite{Pukhov:2004ca}, el cual podemos usar para calcular las
-  secciones eficaces y las amplitudes de decaimiento del modelo.  Como
-  MicrOMEGAS usa internamente CalcHEP, también podremos calcular la
-  densidad de reliquia y la sección eficaz WIMP-nucleón del
-  modelo. Debemos crear también una interfase en Python para hacer los
-  llamados a los diferentes cálculos y para implementar las regiones
-  del espacio de parámetros que son compatibles con los datos de
-  oscilaciones de neutrinos. Paralelamente debemos hacer cálculos
-  analíticos de las secciones eficaces promediadas térmicamente para
-  estar seguros que los resultados de MicroMEGAS son correctos.
+  Para el seesaw radiativo, implementaremos el modelo en MicrOMEGAs.
+  escribiremos el Lagrangiano del modelo el lenguaje de programación
+  LanHEP~\cite{Semenov:2008jy}. Con este programa podremos generar las
+  cuatro tablas en el formato de CalcHEP~\cite{Pukhov:2004ca}, el cual
+  podemos usar para calcular las secciones eficaces y las amplitudes
+  de decaimiento del modelo.  Como MicrOMEGAS usa internamente
+  CalcHEP, también podremos calcular la densidad de reliquia y la
+  sección eficaz WIMP-nucleón del modelo, implementando las
+  correcciones a un loop necesarias para una mejor implementación de
+  las restricciones provenientes de los resultados experimentales de
+  detección directa. Debemos crear también una interfase en Python
+  para hacer los llamados a los diferentes cálculos y para implementar
+  las regiones del espacio de parámetros que son compatibles con los
+  datos de oscilaciones de neutrinos. Paralelamente debemos hacer
+  cálculos analíticos de las secciones eficaces promediadas
+  térmicamente para estar seguros que los resultados de MicroMEGAs son
+  correctos.
 \end{darkmatter}
 
-\item \textbf{meses 12-18} En esta parte se obtendrán y analizarán los
+\item \textbf{meses 6-12} En esta parte se obtendrán y analizarán los
   resultados numéricos de los modelos bajo consideración. El
   estudiante de doctorado realizará su pasantía doctoral en un Grupo
-  de Investigación europeo. En está parte evaluaremos que resultados
-  presentar en éste proyecto.
+  de Investigación europeo. 
 
-\item \textbf{meses 18-24} En esta parte se prepararán los artículos
+\item \textbf{meses 12-18} En esta parte se prepararán los artículos
   para publicación con base en los resultados obtenidos. Uno sobre el
-  nivel de precisión con la que se pueden medir correlaciones nueval
-  del modelo de ruptura bilineal de paridad R en el LHC, y otra sobre
+  nivel de precisión con la que se pueden medir correlaciones nuevas
+  del modelo de ruptura bilineal de paridad R en el LHC, otro sobre
   la formulación de un modelo consistente de ruptura trilineal de
   paridad $R$ con operadores de violación de número leptónico, con el
-  gravitino como materia oscura inestable.
+  gravitino como materia oscura inestable, y otro sobre las
+  implicaciones fenomenológicas del seesaw radiativo en aceleradores
+  de partículas y en experimentos de detección directa de materia
+  oscura. 
 
-
-  Se escribirá el artículo de divulgación sobre resultados recientes
-  del LHC, que para la época estará brindando resultados definitivos
-  de la búsqueda del Higgs hasta una masa de 600 GeV.
-
-  Se presentarán los resultados en una conferencia internacional y se
-  preparará el informe final del proyecto.
+  Se presentarán los resultados en al menos una conferencia
+  internacional y se preparará el informe final del proyecto.
 \end{itemize}
 
 \subsection{Equipo de trabajo:}
 \begin{tabular}{|l|l|l|l|}\hline
 Recurso humano (rol)& Responsabilidad& Unidades (días, meses)& \# de unidades\\\hline
-&&&\\\hline
+Investigador principal&Coordinación&&\\\hline
 \end{tabular}
 
 \subsection{Presupuesto}
 \begin{instrucciones}
-  Por favor siga el modelo de la tabla que encontrará en este punto para la presentación del presupuesto.
+  Por favor siga el modelo de la tabla que encontrará en este punto
+  para la presentación del presupuesto.
+
+  Hasta 150 millones.
 \end{instrucciones}
 \begin{tabular}{|l|l|l|l|}\hline
   \multirow{2}{*}{Rubros}&\multicolumn{2}{c}{Fuentes}\vline&\multirow{2}{*}{Total}\\
