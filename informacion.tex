@@ -1147,7 +1147,13 @@ Duración máxima 18 meses
 \subsection{Equipo de trabajo:}
 \begin{tabular}{|l|l|l|l|}\hline
 Recurso humano (rol)& Responsabilidad& Unidades (días, meses)& \# de unidades\\\hline
-Investigador principal&Coordinación&&\\\hline
+Diego Restrepo&Investigador Principal&&\\\hline
+Oscar Zapata & Coinvestigador &&\\\hline
+Jose David Ruíz & Estudiante de Maestría && \\\hline
+Mauricio Velásquez & Estudiante de Doctorado &&\\\hline
+Diego Aristizaba & Investigador diáspora &&\\\hline
+Nicolás Bernal & Investigador diáspora &&\\\hline
+Carlos Yaguna & Investigador diáspora &&\\\hline
 \end{tabular}
 
 \subsection{Presupuesto}
@@ -1166,14 +1172,25 @@ Investigador principal&Coordinación&&\\\hline
 
 \end{instrucciones}
 \begin{tabular}{|l|l|l|l|}\hline
+\gdef\EFP#1{\FPeval\RR{clip(#1)}\numprint{\RR}}%%\EFP:eval #1  
+\gdef\RFP#1#2{\FPeval\RR{clip(#2)}\FPround\RR\RR{#1}\RR}%%\RFP:#2rounded to#1
+%%\RR is the output of either \EFP or \RFP
   \multirow{2}{*}{Rubros}&\multicolumn{2}{c}{Fuentes}\vline&\multirow{2}{*}{Total}\\
   \cline{2-3} & Colciencias & Contrapartida & \\\hline 
- & & &\\\hline
- & & &\\\hline
- & & &\\\hline
- & & &\\\hline
-TOTAL (en pesos) & & &\\\hline
-Total en porcentaje & & &\\\hline
+Investigador Principal (15h/semana)      &                              &$\EFP{51000000}\xdef\Cc{\RR}$&$\EFP{Cc}\xdef\Cd{\RR}$\\\hline
+Coinvestigador (15h/semana)              &                              &$\EFP{0}\xdef\Dc{\RR}$       &$\EFP{Dc}\xdef\Dd{\RR}$\\\hline
+Coinvestigador (15h/semana)              &                              &$\EFP{0}\xdef\Ec{\RR}$       &$\EFP{Ec}\xdef\Ed{\RR}$\\\hline
+Estudiante de doctorado (Est. Instructor)&$\EFP{27000000}\xdef\Fb{\RR}$ &$\EFP{14400000}\xdef\Fc{\RR}$&$\EFP{(Fb+Fc)}\xdef\Fd{\RR}$\\\hline
+Estudiante de Maestría (Est. Instructor) &$\EFP{18000000}\xdef\Gb{\RR}$ &$\EFP{14400000}\xdef\Gc{\RR}$&$\EFP{(Gb+Gc)}\xdef\Gd{\RR}$\\\hline
+Auxiliar de Sitemas                      &$\EFP{18000000}\xdef\Hb{\RR}$ &$\EFP{       0}\xdef\Hc{\RR}$&$\EFP{(Hb+Hc)}\xdef\Hd{\RR}$\\\hline
+Pasantias y asistencia congresos         &$\EFP{33500000}\xdef\Ib{\RR}$ &$\EFP{ 7000000}\xdef\Ic{\RR}$&$\EFP{(Ib+Ic)}\xdef\Id{\RR}$\\\hline
+Visitantes diáspora                      &$\EFP{34000000}\xdef\Jb{\RR}$ &$\EFP{ 7000000}\xdef\Jc{\RR}$&$\EFP{(Jb+Jc)}\xdef\Jd{\RR}$\\\hline
+Nodo blade server                        &$\EFP{10000000}\xdef\Kb{\RR}$ &$\EFP{       0}\xdef\Kc{\RR}$&$\EFP{(Kb+Kc)}\xdef\Kd{\RR}$\\\hline
+Papeleria e impresiones                  &$\EFP{ 5000000}\xdef\Lb{\RR}$ &$\EFP{       0}\xdef\Lc{\RR}$&$\EFP{(Lb+Lc)}\xdef\Ld{\RR}$\\\hline
+Administración 3\%                       &$\EFP{ 4500000}\xdef\Mb{\RR}$ &$\EFP{       0}\xdef\Mc{\RR}$&$\EFP{(Mb+Mc)}\xdef\Md{\RR}$\\\hline
+TOTAL (en pesos) &$\EFP{(Fb+Gb+Hb+Ib+Jb+Kb+Lb+Mb)}\xdef\Yb{\RR}$ &$\EFP{(Cc+Dc+Ec+Fc+Gc+Hc+Ic+Jc+Kc+Lc+Mc)}\xdef\Yc{\RR}$%
+                 &$\EFP{(Cd+Dd+Ed+Fd+Gd+Hd+Id+Jd+Kd+Ld+Md)}\xdef\Yd{\RR}$\\\hline
+Total en porcentaje &$\RFP{2}{(Yb/Yd)*100}\xdef\Zb{\RR}$ &$\RFP{2}{(Yc/Yd)*100}\xdef\Zb{\RR}$ &$\RFP{2}{(Yd/Yd)*100}\xdef\Zb{\RR}$\\\hline
 \end{tabular}
 
 \subsection{Plan de acción.}

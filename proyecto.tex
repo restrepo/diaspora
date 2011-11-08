@@ -25,7 +25,11 @@
 \usepackage{tabularx}
 
 
+%%LaTeX spreadsheet
 \usepackage[nomessages]{fp}
+\usepackage{numprint}
+\npthousandsep{,}
+%%%%%%%%%%%%%%%%
 \usepackage{cancel}
 \usepackage[colorlinks=true]{hyperref}
 %\usepackage[square,numbers]{natbib}
@@ -39,7 +43,7 @@
 \setlength{\textwidth}{18cm}
 
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
-
+%\PreviewEnvironment{tabular}
 %%new comments enviorement
 \usepackage{comment}
 \includecomment{instrucciones}
