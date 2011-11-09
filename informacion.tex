@@ -704,8 +704,9 @@ mezclas de neutrinos que posean algún candidato de materia oscura.
 \label{item:bbrpvlhc2}
 \item 
 \begin{darkmatter}
-  Calcular la sección eficaz materia-oscura--nucleón en el seesaw
-  radiativo tanto en el caso materia oscura escalar como fermiónica.
+  Calcular la sección eficaz materia-oscura--nucleón a un bucle en el
+  seesaw radiativo tanto en el caso materia oscura escalar como
+  fermiónica.
 \end{darkmatter}
 
 \item 
@@ -718,6 +719,7 @@ mezclas de neutrinos que posean algún candidato de materia oscura.
   detección directa de materia oscura.  Para las señales más
   representativas, hacer simulaciones para el detector ATLAS del LHC.
 \end{darkmatter}
+\label{item:darkmatter1}
 
 \item 
 \begin{darkmatter}
@@ -727,7 +729,7 @@ mezclas de neutrinos que posean algún candidato de materia oscura.
   grande y estudiar sus implicaciones para la generación de
   leptogénesis en el seesaw radiativo.
 \end{darkmatter}
-
+\label{item:darkmatter2}
 
 
 
@@ -927,9 +929,14 @@ computación científica en física de altas energías.
 \item En el mismo sentido se plantea una pasantía de dos semanas del
   profesor Diego Restrepo a la Universidad de Muenster para trabajar
   en estos temas.
-\item Visita del Dr. Diego Aristizabal, por dos semanas para trabajar
-  en la implementación de leptogénesis tanto en los modelos
-  supersimétricos de rotura de paridad R como en el seesaw radiativo.
+\item Visita del Dr. Diego Aristizabal, por dos para  calcular el
+  background de rayos cósmicos de positrones y antiprotones y mirar su
+  influencia en las restricciones del los modelos planteados en la
+  actividad~\ref{item:act1}. Colaborar en el desarrollo del
+  objetivo~\ref{sec:objet-espec}.~\ref{item:darkmatter2} concernientes
+  a la implementación de simetría no Abelianas para simplificar el
+  sector de Yukawa de los neutrinos derechos en el seesaw radiativo.
+
 \item En el mismo sentido se plantea una pasantía del Profesor Luis
   Alfredo Muñoz a la Universidad de Liege para trabajar en estos temas y
   aprovechar la cercanía con las otras dos universidades den Alemania
@@ -937,6 +944,14 @@ computación científica en física de altas energías.
 \item Pasantía por dos meses del estudiante de Doctorado en la
   Universidad de Bonn y la Universidad de Muenster para trabajar en
   los tópicos detallados en la actividad~\ref{item:act1}.
+\item Visita por dos semanas del Dr. Carlos Yaguna para participar en
+  el evento \emph{Workshop on Computational High Energy Physics}, para
+  desarrollarse en el ITM en octubre de 2012. Durante dicho evento el
+  Dr. Yaguna realizará un mini--curso sobre el uso de microMEGAs para
+  el cáculo de la densidad de reliquia de materia en modelos de física
+  más del Modelo Estándar.
+\item Asistencia a evento en el área por algún miembro de la
+  colaboración para presentar avances de resultados.
 \end{enumerate}
 
 
@@ -1168,8 +1183,8 @@ Duración máxima 18 meses
 
 \begin{gravitinodm}
   Aprovechando la experiencia adquirida con Carlos Yaguna
-  implementando los decaimientos a tres
-  ~\cite{Choi:2010xn,Choi:2010jt} y dos cuerpos\cite{Restrepo:2011rj}  del gravitino en el
+  implementando los decaimientos a tres~\cite{Choi:2010xn,Choi:2010jt}
+  y dos cuerpos\cite{Restrepo:2011rj} del gravitino en el
   BRpV~\cite{Choi:2010xn,Choi:2010jt} se realizará un programa para
   implementar todos los decaimientos a tres cuerpos, dos cuerpos y a
   un bucle para el modelo con ruptura de paridad R a través de
@@ -1224,15 +1239,19 @@ Duración máxima 18 meses
 \end{itemize}
 
 \subsection{Equipo de trabajo:}
-\begin{tabular}{|l|l|l|l|}\hline
+\begin{tabular}{|p{3.7cm}|p{5cm} |l|l|}\hline
 Recurso humano (rol)& Responsabilidad& Unidades (días, meses)& \# de unidades\\\hline
-Diego Restrepo&Investigador Principal&&\\\hline
-Oscar Zapata & Coinvestigador &&\\\hline
-Jose David Ruíz & Estudiante de Maestría && \\\hline
-Mauricio Velásquez & Estudiante de Doctorado &&\\\hline
-Diego Aristizaba & Investigador diáspora &&\\\hline
-Nicolás Bernal & Investigador diáspora &&\\\hline
-Carlos Yaguna & Investigador diáspora &&\\\hline
+Diego Restrepo&Investigador Principal&(0,18)&1\\\hline
+Oscar Zapata y Luis A. Muñoz & Coinvestigadores &(0,18)&2\\\hline
+Jose David Ruíz & Estudiante de Maestría &(0,18)&1 \\\hline
+Mauricio Velásquez & Estudiante de Doctorado &(0,18)&1\\\hline
+Diego Aristizabal,
+Nicolás Bernal, 
+Carlos Yaguna & Investigadores diáspora &(0,18)&3\\\hline
+Auxiliar de Sistemas & Optimizar programas para correr en paralelo, 
+                       adaptar código para usar arquitectura CUDA en GPUs, 
+                       conectar nodos existentes a través de tecnología 
+                       grid y unirse oficialmente a Grid Colombia &(0,18)&1\\\hline
 \end{tabular}
 
 \subsection{Presupuesto}
@@ -1250,25 +1269,30 @@ Carlos Yaguna & Investigador diáspora &&\\\hline
   * Difusión de resultados
 
 \end{instrucciones}
-\begin{tabular}{|l|l|l|l|}\hline
+\begin{tabular}{|p{9cm}|l|l|l|}\hline
 \gdef\EFP#1{\FPeval\RR{clip(#1)}\numprint{\RR}}%%\EFP:eval #1  
 \gdef\RFP#1#2{\FPeval\RR{clip(#2)}\FPround\RR\RR{#1}\RR}%%\RFP:#2rounded to#1
 %%\RR is the output of either \EFP or \RFP
   \multirow{2}{*}{Rubros}&\multicolumn{2}{c}{Fuentes}\vline&\multirow{2}{*}{Total}\\
   \cline{2-3} & Colciencias & Contrapartida & \\\hline 
-Investigador Principal (15h/semana)      &                              &$\EFP{51000000}\xdef\Cc{\RR}$&$\EFP{Cc}\xdef\Cd{\RR}$\\\hline
-Coinvestigador (15h/semana)              &                              &$\EFP{0}\xdef\Dc{\RR}$       &$\EFP{Dc}\xdef\Dd{\RR}$\\\hline
-Coinvestigador (15h/semana)              &                              &$\EFP{0}\xdef\Ec{\RR}$       &$\EFP{Ec}\xdef\Ed{\RR}$\\\hline
+Investigador Principal (10h/semana)      &                              &$\EFP{29000000}\xdef\Cc{\RR}$&$\EFP{Cc}\xdef\Cd{\RR}$\\\hline
+Coinvestigador (10h/semana)              &                              &$\EFP{21000000}\xdef\Dc{\RR}$       &$\EFP{Dc}\xdef\Dd{\RR}$\\\hline
+Coinvestigador (10h/semana)              &                              &$\EFP{20000000}\xdef\Ec{\RR}$       &$\EFP{Ec}\xdef\Ed{\RR}$\\\hline
 Estudiante de doctorado (Est. Instructor)&$\EFP{27000000}\xdef\Fb{\RR}$ &$\EFP{14400000}\xdef\Fc{\RR}$&$\EFP{(Fb+Fc)}\xdef\Fd{\RR}$\\\hline
 Estudiante de Maestría (Est. Instructor) &$\EFP{18000000}\xdef\Gb{\RR}$ &$\EFP{14400000}\xdef\Gc{\RR}$&$\EFP{(Gb+Gc)}\xdef\Gd{\RR}$\\\hline
 Auxiliar de Sitemas                      &$\EFP{18000000}\xdef\Hb{\RR}$ &$\EFP{       0}\xdef\Hc{\RR}$&$\EFP{(Hb+Hc)}\xdef\Hd{\RR}$\\\hline
-Pasantias y asistencia congresos         &$\EFP{33500000}\xdef\Ib{\RR}$ &$\EFP{ 7000000}\xdef\Ic{\RR}$&$\EFP{(Ib+Ic)}\xdef\Id{\RR}$\\\hline
-Visitantes diáspora                      &$\EFP{34000000}\xdef\Jb{\RR}$ &$\EFP{ 7000000}\xdef\Jc{\RR}$&$\EFP{(Jb+Jc)}\xdef\Jd{\RR}$\\\hline
-Nodo blade server                        &$\EFP{10000000}\xdef\Kb{\RR}$ &$\EFP{       0}\xdef\Kc{\RR}$&$\EFP{(Kb+Kc)}\xdef\Kd{\RR}$\\\hline
-Papeleria e impresiones                  &$\EFP{ 5000000}\xdef\Lb{\RR}$ &$\EFP{       0}\xdef\Lc{\RR}$&$\EFP{(Lb+Lc)}\xdef\Ld{\RR}$\\\hline
-Administración 3\%                       &$\EFP{ 4500000}\xdef\Mb{\RR}$ &$\EFP{       0}\xdef\Mc{\RR}$&$\EFP{(Mb+Mc)}\xdef\Md{\RR}$\\\hline
-TOTAL (en pesos) &$\EFP{(Fb+Gb+Hb+Ib+Jb+Kb+Lb+Mb)}\xdef\Yb{\RR}$ &$\EFP{(Cc+Dc+Ec+Fc+Gc+Hc+Ic+Jc+Kc+Lc+Mc)}\xdef\Yc{\RR}$%
-                 &$\EFP{(Cd+Dd+Ed+Fd+Gd+Hd+Id+Jd+Kd+Ld+Md)}\xdef\Yd{\RR}$\\\hline
+Nodo blade server                        &$\EFP{10000000}\xdef\Ib{\RR}$ &$\EFP{       0}\xdef\Ic{\RR}$&$\EFP{(Ib+Ic)}\xdef\Id{\RR}$\\\hline
+Papeleria e impresiones                  &$\EFP{ 5000000}\xdef\Jb{\RR}$ &$\EFP{       0}\xdef\Jc{\RR}$&$\EFP{(Jb+Jc)}\xdef\Jd{\RR}$\\\hline
+Cluster de Simulación y Cálculo avanzado %
+(Rack 22 nodos); servidor Blade con 1    %
+nodo; cluster de matemáticas             %
+(Rack 7 nodos)                           &$\EFP{0}\xdef\Kb{\RR}$        &$\EFP{100000000}\xdef\Kc{\RR}$&$\EFP{(Kb+Kc)}\xdef\Kd{\RR}$\\\hline
+Asistencia congresos                     &$\EFP{0}\xdef\Lb{\RR}$        &$\EFP{ 5000000}\xdef\Lc{\RR}$&$\EFP{(Lb+Lc)}\xdef\Ld{\RR}$\\\hline
+Pasantias y asistencia congresos         &$\EFP{33500000}\xdef\Mb{\RR}$ &$\EFP{ 7000000}\xdef\Mc{\RR}$&$\EFP{(Mb+Mc)}\xdef\Md{\RR}$\\\hline
+Visitantes diáspora                      &$\EFP{34000000}\xdef\Wb{\RR}$ &$\EFP{ 7000000}\xdef\Wc{\RR}$&$\EFP{(Wb+Wc)}\xdef\Wd{\RR}$\\\hline
+Administración 3\%                       &$\EFP{ 4500000}\xdef\Xb{\RR}$ &$\EFP{       0}\xdef\Xc{\RR}$&$\EFP{(Xb+Xc)}\xdef\Xd{\RR}$\\\hline
+TOTAL (en pesos) &$\EFP{(Fb+Gb+Hb+Ib+Jb+Kb+Lb+Mb+Wb+Xb)}\xdef\Yb{\RR}$ &$\EFP{(Cc+Dc+Ec+Fc+Gc+Hc+Ic+Jc+Kc+Lc+Mc+Wc+Xc)}\xdef\Yc{\RR}$%
+                 &$\EFP{(Cd+Dd+Ed+Fd+Gd+Hd+Id+Jd+Kd+Ld+Md+Wd+Xd)}\xdef\Yd{\RR}$\\\hline
 Total en porcentaje &$\RFP{2}{(Yb/Yd)*100}\xdef\Zb{\RR}$ &$\RFP{2}{(Yc/Yd)*100}\xdef\Zb{\RR}$ &$\RFP{2}{(Yd/Yd)*100}\xdef\Zb{\RR}$\\\hline
 \end{tabular}
 
@@ -1282,7 +1306,7 @@ Ver Tabla 1 al final
 \caption{3.14 Plan de acción}  % title name of the table
 \centering
 \begin{tabular}{|p{2cm}|l|l|l|l|l|l|l|l|l|l|l|}\hline
-  \multirow{2}{*}{Objetivo} & \multirow{2}{*}{Estrategia} & \multirow{2}{*}{Indicador}  & \multicolumn{9}{|c|}{Metas}\\
+  \multirow{2}{*}{Objetivo} & \multirow{2}{*}{Estrategia} & \multirow{2}{*}{Indicador}  & \multicolumn{9}{|c|}{MQtas}\\
 \cline{4-12} 
 & & & Bimestre 1 &Bimestre 2 & Bimestre 3& Bimestre 4& Bimestre 5& Bimestre 6& Bimestre 7& Bimestre 8& Bimestre 9\\\hline 
 &&&&&&&&&&&\\\hline
