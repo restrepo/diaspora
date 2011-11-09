@@ -636,9 +636,9 @@ intensidad y cósmica para restringir modelos existentes de masas y
 mezclas de neutrinos que posean algún candidato de materia oscura.
 
 \subsubsection{Objetivos específicos}
+\label{sec:objet-espec}
 
-
-\begin{itemize}
+\begin{enumerate}
 \item Consolidar y ampliar las líneas de investigación en las tres
   fronteras de la física de partículas y cosmología en el país, a
   través de la producción de artículos internacionales, aprovechando la
@@ -654,6 +654,7 @@ mezclas de neutrinos que posean algún candidato de materia oscura.
   trilineal cuando evoluciona desde la escala de unificación en un
   contexto de supergravedad mínima.
 \end{gravitinodm}
+\label{item:gravitinodm1}
 
 \item 
 \begin{gravitinodm}
@@ -665,7 +666,7 @@ mezclas de neutrinos que posean algún candidato de materia oscura.
   de neutrino inducidas por operadores trilineales con rotura de
   paridad R con la escala de los sfermiones.
 \end{gravitinodm}
-
+\label{item:gravitinodm2}
 \item 
 \begin{gravitinodm}
   A partir de las medidas de experimentos de rayos cósmicos, como los
@@ -692,6 +693,7 @@ mezclas de neutrinos que posean algún candidato de materia oscura.
   experimentales en las tres fronteras de la física de partículas y la
   cosmología.
 \end{bbrpvlhc}
+\label{item:bbrpvlhc1}
 \item 
 \begin{brpvlhc}  
   En el modelo con ruptura bilineal de paridad R con el neutralino
@@ -699,7 +701,7 @@ mezclas de neutrinos que posean algún candidato de materia oscura.
   a medir en el LHC la correlación entre: La diferencia de masa
   atmosférica al cuadrado y la longitud de decaimiento del neutralino.
 \end{brpvlhc}
-
+\label{item:bbrpvlhc2}
 \item 
 \begin{darkmatter}
   Calcular la sección eficaz materia-oscura--nucleón en el seesaw
@@ -717,10 +719,19 @@ mezclas de neutrinos que posean algún candidato de materia oscura.
   representativas, hacer simulaciones para el detector ATLAS del LHC.
 \end{darkmatter}
 
+\item 
+\begin{darkmatter}
+  Implementar simetrías no Abelianas para simplificar el sector de
+  Yukawas de los neutrinos derechos para determinar las condiciones
+  bajo las cuales se puede tener un ángulo de mezcla $\theta_{13}$
+  grande y estudiar sus implicaciones para la generación de
+  leptogénesis en el seesaw radiativo.
+\end{darkmatter}
 
 
 
-\end{itemize}
+
+\end{enumerate}
 
 \subsection{Metodología:                                   }
 \begin{instrucciones}
@@ -880,16 +891,56 @@ Grid Institucional de computación de alto rendimiento.
 
 
 \subsection{Actividades:                                   }
+\label{sec:actividades}
 Las actividades a desarrollar durante el proyectos consistirán en
 pasantías, visitas y la organización de un taller sobre herramientas de
 computación científica en física de altas energías.
 
-\begin{gravitinodm}
-  Durante la visita a desarrollar por el Dr. Nicolás Bernal dura
-\end{gravitinodm}
+\begin{enumerate}
+\item Visita del Dr. Nicolás Bernal, por dos semanas para trabajar en
+  la formulación del modelo más allá del BRpV con la implementación de
+  operadores no-renormalizables de dimensión cinco con violación de
+  número leptónico, y estudiar las implicaciones descritas en los
+  objetivos~\ref{sec:objet-espec}.\ref{item:bbrpvlhc1}--\ref{item:bbrpvlhc2}. Así
+  como la implementación de los cambios desarrollados al programa
+  computacional SUSPECT descritos en el
+  objetivo~\ref{sec:objet-espec}.\ref{item:bbrpvlhc1}.~\ref{item:gravitinodm2}. 
+  \label{item:act1}
+
+\item En el mismo sentido se plantea una pasantía por dos semanas del
+  Profesor Oscar Zapata a la Universidad de Bonn para trabajar estos
+  temas y contar con la asesoría del profesor Herbi Dreiner quien es
+  un experto en la implementación numérica de masas y mezclas de
+  neutrinos en modelos supersimétricos con rotura trilineal de paridad
+  R con términos bilineales inducidos a través de las ecuaciones del
+  Grupo de la Renormalización~\cite{Dreiner:2011ft}.
+\item Visita del Dr. Carlos Yaguna para asesorar al estudiante de
+  maestría en el cálculo de la sección eficaz WIMP--nucleón a un bucle
+  en el modelo seesaw radiativo, en especial en el caso en que la
+  materia oscura corresponde a un escalar inerte. Con dicha visita
+  también se avanzará en la implementación del programa para calcular
+  los decaimientos del gravitino en un modelo supersimétrico con
+  rotura trilineal de paridad R y términos bilineales inducidos
+  detallados en el
+  objetivo~\ref{sec:objet-espec}.~\ref{item:gravitinodm1}.
+
+\item En el mismo sentido se plantea una pasantía de dos semanas del
+  profesor Diego Restrepo a la Universidad de Muenster para trabajar
+  en estos temas.
+\item Visita del Dr. Diego Aristizabal, por dos semanas para trabajar
+  en la implementación de leptogénesis tanto en los modelos
+  supersimétricos de rotura de paridad R como en el seesaw radiativo.
+\item En el mismo sentido se plantea una pasantía del Profesor Luis
+  Alfredo Muñoz a la Universidad de Liege para trabajar en estos temas y
+  aprovechar la cercanía con las otras dos universidades den Alemania
+  para avanzar en los demás objetivos del proyecto.
+\item Pasantía por dos meses del estudiante de Doctorado en la
+  Universidad de Bonn y la Universidad de Muenster para trabajar en
+  los tópicos detallados en la actividad~\ref{item:act1}.
+\end{enumerate}
 
 
-\end{itemize}
+
 
 \subsection{Resultados esperados:                          }
 \begin{evaluacion}
@@ -1062,6 +1113,21 @@ este proyecto, se amplien las líneas de investigación
   ....
 \end{darkmatter}
 
+%%%Para adicionar a los cambios que haga Oscar
+Uno de los resultados más importante que se espera obtener de éste
+proyecto es el establecimiento de modelos supersimétricos difíciles de
+encontrar en el LHC por la degradación de la señal de energía y por
+alta actividad hadrónica que den una explicación satisfactoria par las
+masas y mezclas de los  neutrinos y tengan al gravitino como candidato
+de materia oscura con implicaciones concretas en experimentos de rayos
+cósmicos.  
+
+Para maximimizar el uso intensivo de computación de alto rendimiento
+se vinculará a la Universidad de Antioquia a la red de computación
+distribuida \emph{Grid Colombia}, asignando prioridades a los usuarios
+de la Universidad de Antioquia de los diferentes cluster de
+computadores con los que cuenta la Institución detallados en el
+presupuesto. 
 
 \subsection{Cronograma:                                    }
 \begin{evaluacion}
@@ -1101,6 +1167,14 @@ Duración máxima 18 meses
 \end{brpvlhc}
 
 \begin{gravitinodm}
+  Aprovechando la experiencia adquirida con Carlos Yaguna
+  implementando los decaimientos a tres
+  ~\cite{Choi:2010xn,Choi:2010jt} y dos cuerpos\cite{Restrepo:2011rj}  del gravitino en el
+  BRpV~\cite{Choi:2010xn,Choi:2010jt} se realizará un programa para
+  implementar todos los decaimientos a tres cuerpos, dos cuerpos y a
+  un bucle para el modelo con ruptura de paridad R a través de
+  términos trilineales con términos bilineales inducidos.
+
   Para el caso en que el gravitino es la LSP debemos modificar el
   programa para calcular las correlaciones con base en la NLSP
   teniendo en cuenta los nuevos canales en las cuales la NLSP puede
