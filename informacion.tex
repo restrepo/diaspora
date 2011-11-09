@@ -21,7 +21,7 @@ Ciencias Básicas
 %Máximo 200 palabras.
 Los avances recientes en física de partículas y cosmología han
 establecido claramente tres fronteras donde se está desarrollando todo
-el esfuerzo experimental para los misterios cruciales de nuestro
+el esfuerzo experimental para dilucidar los misterios cruciales de nuestro
 Universo: La Frontera de Energía, La Frontera de Intensidad y la
 Frontera Cósmica. La investigación en fenomenología de física de altas
 energías en Medellín se ha venido posicionando en estas fronteras con
@@ -31,13 +31,13 @@ desarrollos enfocándonos en modelos que contengan como candidato de
 materia oscura inestable al gravitino, o candidatos de materia oscura
 estable a un escalar inerte o un neutrino derecho a la escala
 electrodébil y que a la vez den cuenta de las masas y mezclas de
-neutrino. A éste tipo de modelos se aplicarán restricciones
+neutrinos. A éste tipo de modelos se aplicarán restricciones
 experimentales y se propondrán señales que involucren la intersección
 de dos o más de las fronteras experimentales. La complejidad de los
 modelos y la gran cantidad de datos experimentales disponibles hacen
 necesario un estudio numérico que requiere de técnicas de computación
 de alto desempeño en sistemas de computación distribuida por lo que le
-proyecto permitirá seguir consolidando el grid de computación regional
+proyecto permitirá seguir consolidando el Grid de computación regional
 y del país.
 
 \subsection{Monto económico total (incluida contrapartida):}
@@ -81,14 +81,14 @@ funcionamiento del Large Hadron Collider (LHC). Ubicado en un túnel a
 posee cuatro detectores, dos de los cuales (ATLAS y CMS) están
 especialmente diseñados para encontrar el Higgs y señales de nueva
 física. Para analizar la gran cantidad de datos que se genera cada
-segundo el LHC ha tenido que implementar un Grid de decenas de miles
+segundo, el LHC ha tenido que implementar un Grid de decenas de miles
 de computadores a nivel planetario, convirtiendose en un líder natural
 en la implementación y definición de estándares de comunicación y
 redes para conectar clusters de computadores con la tecnología
-GRID. La infraestructura de Grid Colombia está basada en la
-implementación del GRID desarrollada en el LHC. El 90\% de los Grids
-mundiales se usa en estos por la comunidad de física de
-altas energías pero se espera que en el futuro cercano su uso se
+Grid. La infraestructura de Grid Colombia está basada en la
+implementación del Grid desarrollada en el LHC. El 90\% de los grids
+mundiales es usada en estos momentos por la comunidad de física de
+altas energías, pero se espera que en el futuro cercano su uso se
 extienda a otras áreas de la ciencia y la tecnología. El LHC ha
 comenzado a operar en el 2010, aunque hasta el 2012 lo hará a la mitad
 de la energía para la cual fue diseñado. A partir del 2014
@@ -766,7 +766,7 @@ mezclas de neutrinos que posean algún candidato de materia oscura.
 
 \item Mejorar la infraestructura computacional de alto rendimiento en
   la Universidad de Antioquia, la región y el país, con la conexión en
-  grid de los cluster existentes, su vinculación a Grid Colombia, y la
+  Grid de los cluster existentes, su vinculación a Grid Colombia, y la
   implementación de la arquitectura CUDA para GPUs con la compra de un
   nodo para blade server con puertos para tarjetas gráficas Tesla de
   múltiples núcleos.
@@ -1374,7 +1374,7 @@ Carlos Yaguna & Investigadores diáspora &(0,18)&3\\\hline
 Auxiliar de Sistemas & Optimizar programas para correr en paralelo, 
                        adaptar código para usar arquitectura CUDA en GPUs, 
                        conectar nodos existentes a través de tecnología 
-                       grid y unirse oficialmente a Grid Colombia &(0,18)&1\\\hline
+                       Grid y unirse oficialmente a Grid Colombia &(0,18)&1\\\hline
 \end{tabular}
 
 \subsection{Presupuesto}
@@ -1397,14 +1397,19 @@ Auxiliar de Sistemas & Optimizar programas para correr en paralelo,
 \gdef\RFP#1#2{\FPeval\RR{clip(#2)}\FPround\RR\RR{#1}\RR}%%\RFP:#2rounded to#1
 %%\RR is the output of either \EFP or \RFP
   \multirow{2}{*}{Rubros}&\multicolumn{2}{c}{Fuentes}\vline&\multirow{2}{*}{Total}\\
-  \cline{2-3} & Colciencias & Contrapartida & \\\hline 
+  \cline{2-3} & Colciencias & Contrapartida$^*$ & \\\hline 
 Investigador Principal (10h/semana)      &                              &$\EFP{29000000}\xdef\Cc{\RR}$&$\EFP{Cc}\xdef\Cd{\RR}$\\\hline
-Coinvestigador (10h/semana)              &                              &$\EFP{21000000}\xdef\Dc{\RR}$       &$\EFP{Dc}\xdef\Dd{\RR}$\\\hline
-Coinvestigador (10h/semana)              &                              &$\EFP{20000000}\xdef\Ec{\RR}$       &$\EFP{Ec}\xdef\Ed{\RR}$\\\hline
+Coinvestigador (10h/semana): Contrapartida
+Escuela de Ingeniería de Antioquia       &                              &$\EFP{21000000}\xdef\Dc{\RR}$       &$\EFP{Dc}\xdef\Dd{\RR}$\\\hline
+Coinvestigador (10h/semana): Contrapartida
+Insituto Tecnológico metropolitano       &                              &$\EFP{20000000}\xdef\Ec{\RR}$       &$\EFP{Ec}\xdef\Ed{\RR}$\\\hline
 Estudiante de doctorado (Est. Instructor)&$\EFP{27000000}\xdef\Fb{\RR}$ &$\EFP{14400000}\xdef\Fc{\RR}$&$\EFP{(Fb+Fc)}\xdef\Fd{\RR}$\\\hline
 Estudiante de Maestría (Est. Instructor) &$\EFP{18000000}\xdef\Gb{\RR}$ &$\EFP{14400000}\xdef\Gc{\RR}$&$\EFP{(Gb+Gc)}\xdef\Gd{\RR}$\\\hline
-Auxiliar de Sistemas                      &$\EFP{18000000}\xdef\Hb{\RR}$ &$\EFP{       0}\xdef\Hc{\RR}$&$\EFP{(Hb+Hc)}\xdef\Hd{\RR}$\\\hline
-Nodo blade server                        &$\EFP{10000000}\xdef\Ib{\RR}$ &$\EFP{       0}\xdef\Ic{\RR}$&$\EFP{(Ib+Ic)}\xdef\Id{\RR}$\\\hline
+Auxiliar de Sistemas                     &$\EFP{18000000}\xdef\Hb{\RR}$ &$\EFP{       0}\xdef\Hc{\RR}$&$\EFP{(Hb+Hc)}\xdef\Hd{\RR}$\\\hline
+Accesorios para el Blade server: 
+tarjetas gráficas con Arquitectura CUDA 
+Tesla de multiples núcleos, RAM, switches,
+procesadores, unidades de almacenamiento.&$\EFP{10000000}\xdef\Ib{\RR}$ &$\EFP{       0}\xdef\Ic{\RR}$&$\EFP{(Ib+Ic)}\xdef\Id{\RR}$\\\hline
 Papelería e impresiones                  &$\EFP{ 5000000}\xdef\Jb{\RR}$ &$\EFP{       0}\xdef\Jc{\RR}$&$\EFP{(Jb+Jc)}\xdef\Jd{\RR}$\\\hline
 Cluster de Simulación y Cálculo avanzado %
 (Rack 22 nodos); servidor Blade con 1    %
@@ -1418,7 +1423,7 @@ TOTAL (en pesos) &$\EFP{(Fb+Gb+Hb+Ib+Jb+Kb+Lb+Mb+Wb+Xb)}\xdef\Yb{\RR}$ &$\EFP{(C
                  &$\EFP{(Cd+Dd+Ed+Fd+Gd+Hd+Id+Jd+Kd+Ld+Md+Wd+Xd)}\xdef\Yd{\RR}$\\\hline
 Total en porcentaje &$\RFP{2}{(Yb/Yd)*100}\xdef\Zb{\RR}$ &$\RFP{2}{(Yc/Yd)*100}\xdef\Zb{\RR}$ &$\RFP{2}{(Yd/Yd)*100}\xdef\Zb{\RR}$\\\hline
 \end{tabular}
-
+$^*$ Excepto para el Rubro de Coinvestigadores, la contrapartida corresponde a la UdeA.
 \subsection{Plan de acción.}
 Ver Tabla 1
 \begin{evaluacion}
@@ -1428,7 +1433,7 @@ Ver Tabla 1
 \footnotesize
 \caption{3.14 Plan de acción}  % title name of the table
 \centering
-\begin{tabular}{|p{2cm}|p{1.7cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}\hline
+\begin{tabular}{|p{2cm}|p{1.7cm}|p{1.45cm}|p{1.45cm}|p{1.45cm}|p{1.45cm}|p{1.45cm}|p{1.45cm}|p{1.45cm}|p{1.45cm}|p{1.45cm}|p{1.45cm}|}\hline
   \multirow{2}{*}{Objetivo} & \multirow{2}{*}{Estrategia} & \multirow{2}{*}{Indicador}  & \multicolumn{9}{|c|}{MQtas}\\
 \cline{4-12} 
 & & & Bimestre 1 &Bimestre 2 & Bimestre 3& Bimestre 4& Bimestre 5& Bimestre 6& Bimestre 7& Bimestre 8& Bimestre 9\\\hline 
@@ -1437,7 +1442,7 @@ Ver Tabla 1
   leptónico&Visitas, Pasantías&Artículo A1&Cálculos análiticos&&Programas computacionales&Pa\-ra\-le\-li\-za\-ción de códigos&Obtención de resultados&&Publicación de resultados&&\\\hline
 \ref{sec:objet-espec}.~\ref{item:bbrpvlhc1}: modelo BRpV con operadores no renormalizables de dimensión cinco&Visitas, Pasantías&Artículo A1&Cálculos análiticos&&Programas computacionales&Pa\-ra\-le\-li\-za\-ción de códigos&&Obtención de resultados&&Publicación de resultados&\\\hline
 \ref{sec:objet-espec}.~\ref{item:darkmatter1}: seesaw radiativo&Visitas, Pasantías&Artículo A1&&Cálculos análiticos&&Programas computacionales&Pa\-ra\-le\-li\-za\-ción de códigos&Obtención de resultados&&Publicación de resultados&\\\hline
-\ref{sec:objet-espec}.~\ref{item:grid}: Implementación de la infraestrucura Grid insitucional y su vinculación a Grid Colombia&Visitas, Pasantías, contratación de auxiliar de sistemas&Afiliación a Grid Colombia&Solicitud de vinculación a grid Colombia&Instalación de programas Grid a los clusters locales&Tests de calidad&Fase de producción en Grid Colombia&Pa\-ra\-le\-li\-za\-ción de códigos&Obtención de resultados&Obtención de resultados&&\\\hline
+\ref{sec:objet-espec}.~\ref{item:grid}: Implementación de la infraestrucura Grid insitucional y su vinculación a Grid Colombia&Visitas, Pasantías, contratación de auxiliar de sistemas&Afiliación a Grid Colombia&Solicitud de vinculación a Grid Colombia&Instalación de programas Grid a los clusters locales&Tests de calidad&Fase de producción en Grid Colombia&Pa\-ra\-le\-li\-za\-ción de códigos&Obtención de resultados&Obtención de resultados&&\\\hline
 \end{tabular}
 \label{tab:LPer}
 \end{sidewaystable}
