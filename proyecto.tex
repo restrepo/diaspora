@@ -4,8 +4,11 @@
 %Force pdflatex processing even with "$ latex" (required by arXiv)
 \pdfoutput=1
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\addto\captionsspanish{%
+\def\tablename{Tabla}%
+}
 %Maldito arial 12
 %changing the deafult fonts
 \usepackage{textcomp}
