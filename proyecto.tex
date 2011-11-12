@@ -131,6 +131,14 @@
 \newcommand{\emaristizabal}{}
 \newcommand{\totalproy}{405,300,000}
 
+%%Preventing hyphenation of a particular word
+\hyphenation{SPheno}
+\hyphenation{MicroMEGAs}
+\hyphenation{SuSpect}
+\hyphenation{SOFTSUSY}
+\hyphenation{PYTHIA} 
+
+
 \begin{document}
 %Descomentar para obtener informacion sensible
 %\input{sensible}
@@ -148,14 +156,14 @@
 \input{estrategia}
 \input{trabajo_colaborativo}
 \input{lugares}
-\input{anexos}
 %\input{referencias}
 
 %\newpage
 \bibliographystyle{apsrev4-1long}
 \bibliography{susy}%%,soko,snova,nu-rev06,parke-ref}
 
-
+\appendix
+\input{anexos}
 \end{document}
 
 %%% Local Variables: 

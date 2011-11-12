@@ -741,9 +741,9 @@ mezclas de neutrinos que posean algún candidato de materia oscura.
 \item
 \begin{gravitinodm}
   Estudiar cuáles serían las implicaciones en física de neutrinos
-  cuando no se consideran las restricciones de leptogénesis en con
-  rotura de paridad R a través de operadores con violación de número
-  leptónico y con el gravitino como materia oscura.
+  cuando no se consideran las restricciones de leptogénesis en modelos
+  con rotura de paridad R a través de operadores con violación de
+  número leptónico y con el gravitino como materia oscura.
 \end{gravitinodm}
 
 \item 
@@ -758,7 +758,7 @@ mezclas de neutrinos que posean algún candidato de materia oscura.
 \item 
 \begin{brpvlhc}  
   En el modelo con rotura bilineal de paridad R con el neutralino
-  como la LSP, determinar con qué nivel de precisión se podría llegar
+  como la NLSP, determinar con qué nivel de precisión se podría llegar
   a medir en el LHC la correlación entre la diferencia de masa
   atmosférica al cuadrado y la longitud de decaimiento del neutralino.
 \end{brpvlhc}
@@ -784,8 +784,8 @@ mezclas de neutrinos que posean algún candidato de materia oscura.
 
 \item 
 \begin{darkmatter}
-  Implementar simetrías no Abelianas para simplificar el sector de
-  Yukawas de los neutrinos derechos para determinar las condiciones
+  Implementar simetrías no abelianas para simplificar el sector de
+  Yukawas de los neutrinos derechos y determinar las condiciones
   bajo las cuales se puede tener un ángulo de mezcla $\theta_{13}$
   grande y estudiar sus implicaciones para la generación de
   leptogénesis en el seesaw radiativo.
@@ -795,9 +795,9 @@ mezclas de neutrinos que posean algún candidato de materia oscura.
 \item Mejorar la infraestructura computacional de alto rendimiento en
   la Universidad de Antioquia, la región y el país, con la conexión en
   Grid de los cluster existentes, su vinculación a Grid Colombia, y la
-  implementación de la arquitectura CUDA para GPUs con la compra de un
-  nodo para blade server con puertos para tarjetas gráficas Tesla de
-  múltiples núcleos.
+  implementación de la arquitectura CUDA para GPUs Tesla de múltiples
+  núcleos en el ``Blade server'' del Grupo de la Universidad de
+  Antioquia.
 \label{item:grid}
 \end{enumerate}
 
@@ -835,8 +835,9 @@ paso con referencias concretas.
   frontera de intensidad y cósmica. En el caso de modelos con
   mecanismos de generación radiativa de masas de neutrinos las
   correlaciones se buscan con los datos de oscilaciones de neutrinos
-  \cite{Diaz:2003as}, y en el caso de materia oscura con experimentos
-  de detección directa e indirecta \cite{Bernal:2009tt,Bernal:2009jc,Choi:2010xn,Restrepo:2011rj}.
+  \cite{Diaz:2003as}, y en el caso de materia oscura, con experimentos
+  de detección directa e indirecta
+  \cite{Bernal:2009tt,Bernal:2009jc,Choi:2010xn,Restrepo:2011rj}.
   \label{item:6}
 \item Se desarrolla un programa computacional que dado los parámetros
   de entrada del modelo entregue las secciones eficaces y los
@@ -860,18 +861,18 @@ paso con referencias concretas.
   \cite{Magro:2003zb,deCampos:2005ri,deCampos:2007bn,deCampos:2008ic,deCampos:2008re},
   o en experimentos de detección directa~\cite{Bernal:2009tt,Bernal:2009jc} o indirecta \cite{Choi:2010xn} de
   materia oscura. En el caso de detección directa el número esperado
-  de eventos puede calcularse directamente con MicrOMEGAs. Este paso
-  requiere normalmente herramientas de computación distribuida en
-  clusters de computadores, y en éste caso se hará uso de la
-  infraestructura Grid para que se implementará en la Universidad en
+  de eventos puede calcularse directamente con MicrOMEGAs. 
+
+  Este paso requiere normalmente herramientas de computación
+  distribuida en clusters de computadores, y en éste caso se hará uso
+  de la infraestructura Grid que se implementará en la Universidad en
   el marco de éste proyecto.
   \label{item:8}
 \item Como modelos muy diferentes pueden dar lugar a las mismas
-  señales en detectores, se debe hacer también simulaciones en PYTHIA
-  del nivel de precisión con el que se pueden determinar observables
-  en los experimentos de la frontera de energía que se puedan
-  correlacionar con observables en los experimentos de las fronteras
-  de intensidad y cósmica.
+  señales en detectores, se deben realizar también simulaciones en
+  PYTHIA del nivel de precisión con el que se pueden determinar las
+  correlaciones entre observables de experimentos en la frontera de
+  energía y las fronteras de intensidad y cósmica.
   \label{item:9}
 \end{enumerate}
 
@@ -882,14 +883,16 @@ específicos y puedan descubrir o poner cotas sobre las nuevas
 partículas propuestas. En el caso de detección directa o indirecta de
 materia oscura donde las señales están preestablecidas, la
 simulaciones se realizan para poder comparar con los datos obtenidos o
-que se pueden llegar a obtener. Es así como el trabajo fenomenológico
-realizado alrededor del modelo BRpV ya ha dado sus frutos al estar ya
-en las agendas de búsqueda de los grupos experimentales del
+que se pueden llegar a obtener. 
+
+La aplicación de esta metodología en el contexto del modelo BRpV ya ha
+dado sus frutos pues las señales propuestas ya están en las agendas de
+búsqueda de los grupos experimentales del
 Tevatron~\cite{Brigliadori:2008vf} y el LHC~\cite{:2011iu}. Esperamos
 que con este proyecto se pueda llegar al mismo nivel de relación de
-teoría y experimento con otras extensiones del ME que
-también explican las masas y mezclas de neutrinos y tienen candidatos
-de materia oscura.
+teoría y experimento con otras extensiones del ME que también explican
+las masas y mezclas de neutrinos y tienen candidatos de materia
+oscura.
 
 
 
@@ -903,7 +906,7 @@ de materia oscura.
 \begin{brpvlhc}
   En el marco de este proyecto se simularán dos correlaciones
   adicionales que existen en el modelo con rotura bilineal de paridad R:
-  cuando el neutralino es la LSP, los decaimientos a tres cuerpos
+  cuando el neutralino es la NLSP, los decaimientos a tres cuerpos
   mediados por sfermiones con muones y electrones en los estados
   finales, están correlaciones con el ángulo de mezcla solar, y la
   longitud de decaimiento del neutralino está correlacionada con la
@@ -944,14 +947,16 @@ adquisición de un servidor Blade con capacidad para 8 nodos, aunque de
 momento sólo tiene un nodo instalado. Toda esta experiencia le ha
 permitido consolidar un grupo de desarrolladores y administradores de
 software científico que ahora conforman la división de ciencias de la
-computación del grupo la cual es ahora la encargada de administrar el
-Centro Regional de Simulación y Cálculo Avanzado (CRESCA) y ofrece
-servicio de computación científica.  Una de las metas prioritarias es
-la unificar el poder de computo de los Grupos de Investigación de la
-Universidad, como el servidor Blade del grupo, en un Grid
-Institucional que la vez este conectado con Grid Colombia. En el
-proyecto solicitamos, además de los recursos para seguir mejorando la
-infraestructura tecnológica a través de nodos Blade que soporten la
+computación del grupo la cual es ahora el encargada de administrar el
+Centro Regional de Simulación y Cálculo Avanzado (CRESCA) de la
+Universidad, el cual cuenta con un supercomutador en Rack de 22 nodos
+y ofrece servicios de computación científica en la región.  Una de las
+metas prioritarias es la unificar el poder de computo de los Grupos de
+Investigación de la Universidad, como el cluster de CRESCA, el del
+Instituto de Matemática de 7 nodos, y el servidor Blade del Grupo, en
+un Grid Institucional que la vez este conectado con Grid Colombia. En
+el proyecto solicitamos, además de los recursos para seguir mejorando
+la infraestructura tecnológica a través de nodos Blade que soporten la
 arquitectura CUDA para computación distribuida a través de GPU, la
 contratación de un Administrador de Sistemas, que dedicaría parte de
 su tiempo para la administración de CRESCA y la implementación del
@@ -961,19 +966,22 @@ Grid Institucional de computación de alto rendimiento.
 
 \subsection{Actividades:                                   }
 \label{sec:actividades}
-Las actividades a desarrollar durante el proyectos consistirán en
-pasantías, visitas y la organización de un taller sobre herramientas de
-computación científica en física de altas energías.
+Las actividades a desarrollar durante el proyecto consistirán en
+pasantías, visitas y la organización de un taller sobre herramientas
+de computación científica en física de altas energías, detalladas a
+continuación.
 
 \begin{enumerate}
 \item Visita del Dr. Nicolás Bernal, por dos semanas para trabajar en
   la formulación del modelo más allá del BRpV con la implementación de
-  operadores no-renormalizables de dimensión cinco con violación de
+  operadores norenormalizables de dimensión cinco con violación de
   número leptónico, y estudiar las implicaciones descritas en los
   objetivos~\ref{sec:objet-espec}.\ref{item:bbrpvlhc1}--\ref{item:bbrpvlhc2}. Así
   como la implementación de los cambios desarrollados al programa
-  computacional SuSpect descritos en el
-  objetivo~\ref{sec:objet-espec}.\ref{item:bbrpvlhc1}.~\ref{item:gravitinodm2}. 
+  computacional SuSpect descritos en los
+  objetivos~\ref{sec:objet-espec}.\ref{item:gravitinodm2} y
+  \ref{sec:objet-espec}.\ref{item:bbrpvlhc1}.
+  
   \label{item:act1}
 
 \item En el mismo sentido se plantea una pasantía por tres semanas del
@@ -993,14 +1001,14 @@ computación científica en física de altas energías.
   los decaimientos del gravitino en un modelo supersimétrico con
   rotura trilineal de paridad R y términos bilineales inducidos
   detallados en el
-  objetivo~\ref{sec:objet-espec}.~\ref{item:gravitinodm1}.
+  objetivo~\ref{sec:objet-espec}.\ref{item:gravitinodm1}.
   \label{item:act3}
 
 \item Visita del Dr. Diego Aristizábal, por dos semanas para  calcular el
   fondo de rayos cósmicos de positrones y antiprotones, y  su
   influencia en las restricciones del los modelos planteados en la
   actividad~\ref{item:act1}. Colaborar en el desarrollo del
-  objetivo~\ref{sec:objet-espec}.~\ref{item:darkmatter2} concerniente
+  objetivo~\ref{sec:objet-espec}.\ref{item:darkmatter2} concerniente
   a la implementación de simetrías no abelianas para simplificar el
   sector de Yukawa de los neutrinos derechos en el seesaw radiativo.
   \label{item:act4}
@@ -1195,29 +1203,34 @@ rayos cósmicos, entreguen una evidencia definitiva de materia oscura.
 \end{gravitinodm}
 
 \begin{bbrpvlhc}
-  También se espera establecer si es posible obtener un modelo con 
-  operadores de rotura de paridad R no renormalizables hasta dimensión cinco, que puedan
-  explicar la densidad de materia oscura con gravitinos, dar cuenta de
-  los datos de física de neutrinos y sea consistente con las
-  restricciones provenientes de rayos cósmicos.
+  También se espera establecer si es posible obtener un modelo con
+  operadores de rotura de paridad R no renormalizables hasta dimensión
+  cinco, que puedan explicar la densidad de materia oscura con
+  gravitinos, dar cuenta de los datos de física de neutrinos y ser
+  consistente con las restricciones provenientes de rayos cósmicos.
 \end{bbrpvlhc}
 
 \begin{brpvlhc}
-  Cuando el neutralino es la partícula supersimétrica más ligera en los modelos con rotura bilineal de paridad R se determinará con que nivel de precisión se podría llegar a medir en el LHC la correlación entre la diferencia de masa atmosférica al cuadrado y la longitud de decaimiento del neutralino.
+  Cuando el neutralino es la seguna partícula supersimétrica más
+  ligera en los modelos con rotura bilineal de paridad R, se
+  determinará con que nivel de precisión se podría llegar a medir en
+  el LHC la correlación entre la diferencia de masa atmosférica al
+  cuadrado y la longitud de decaimiento del neutralino.
 \end{brpvlhc}
 
 \begin{darkmatter}
   Para modelos con un candidato a materia oscura escalar, tales como
-  los modelos del singlete y del doblete escalar, establecer cuales son las
-  implicaciones en la detección directa cuando se tienen en cuenta las
-  contribuciones a un bucle  para la sección eficaz de la
-  partícula escalar de materia oscura. Con respecto al modelo del
-  seesaw radiativo con materia oscura fría, se espera obtener correlaciones entre mezclas y masas de
-  neutrinos con combinaciones de branchings de decaimientos de las
+  los modelos del singlete y del doblete escalar, se establecerán
+  cuales son las implicaciones en la detección directa cuando se
+  tienen en cuenta las contribuciones a un bucle para la sección
+  eficaz de la partícula escalar de materia oscura con los
+  nucleones. Con respecto al modelo del seesaw radiativo con materia
+  oscura fría, se espera obtener correlaciones entre mezclas y masas
+  de neutrinos con combinaciones de branchings de decaimientos de las
   partículas impares de dicho modelo, y a la vez establecer cuales son
   las señales que pueden ser observadas en el LHC. Por otro lado,
-  establecer cuales son las simetrías no abelianas que posibilitan
-  la obtención de un ángulo de mezcla $\theta_{13}$ grande y sus
+  establecer cuales son las simetrías no abelianas que posibilitan la
+  obtención de un ángulo de mezcla $\theta_{13}$ grande y sus
   implicaciones para la explicación de la asimetría bariónica en el
   Universo a través de leptogénesis.
 \end{darkmatter}
@@ -1225,16 +1238,16 @@ rayos cósmicos, entreguen una evidencia definitiva de materia oscura.
 %%%Para adicionar a los cambios que haga Oscar
 Uno de los resultados más importante que se espera obtener de este
 proyecto es el establecimiento de modelos supersimétricos difíciles de
-encontrar en el LHC por la degradación de la señal de energía y por
-alta actividad hadrónica que den una explicación satisfactoria par las
-masas y mezclas de los  neutrinos y tengan al gravitino como candidato
-de materia oscura con implicaciones concretas en experimentos de rayos
-cósmicos.  
+encontrar en el LHC por la degradación de la señal de energía faltante
+y por alta actividad hadrónica que den una explicación satisfactoria
+par las masas y mezclas de los neutrinos y tengan al gravitino como
+candidato de materia oscura con implicaciones concretas en
+experimentos de rayos cósmicos.
 
 Para maximizar el uso intensivo de computación de alto rendimiento
 se vinculará a la Universidad de Antioquia a la red de computación
 distribuida \emph{Grid Colombia}, asignando prioridades a los usuarios
-de la Universidad de Antioquia de los diferentes cluster de
+de la Universidad de Antioquia en los diferentes clusters de
 computadores con los que cuenta la Institución detallados en el
 presupuesto. 
 
@@ -1310,47 +1323,48 @@ de cada periodo
 
 \begin{darkmatter}
   Para el seesaw radiativo, implementaremos el modelo en MicrOMEGAs.
-  escribiremos el Lagrangiano del modelo el lenguaje de programación
-  LanHEP~\cite{Semenov:2008jy}. Con este programa podremos generar las
-  cuatro tablas en el formato de CalcHEP~\cite{Pukhov:2004ca}, el cual
-  podemos usar para calcular las secciones eficaces y las amplitudes
-  de decaimiento del modelo.  Como MicrOMEGAs usa internamente
-  CalcHEP, también podremos calcular la densidad de reliquia y la
-  sección eficaz WIMP-nucleón del modelo, implementando las
-  correcciones a un bucle necesarias para una mejor implementación de
-  las restricciones provenientes de los resultados experimentales de
-  detección directa. Debemos crear también una interfase en Python
-  para hacer los llamados a los diferentes cálculos y para implementar
-  las regiones del espacio de parámetros que son compatibles con los
-  datos de oscilaciones de neutrinos. Paralelamente debemos hacer
-  cálculos analíticos de las secciones eficaces promediadas
-  térmicamente para estar seguros que los resultados de MicrOMEGAs son
-  correctos.
+  Para ellos primero escribiremos el Lagrangiano del modelo el
+  lenguaje de programación LanHEP~\cite{Semenov:2008jy}. Con este
+  programa podremos generar las cuatro tablas en el formato del
+  programa CalcHEP~\cite{Pukhov:2004ca}, el cual podemos usar para
+  calcular las secciones eficaces y las amplitudes de decaimiento del
+  modelo.  Como MicrOMEGAs usa internamente CalcHEP, también podremos
+  calcular la densidad de reliquia y la sección eficaz WIMP-nucleón
+  del modelo, implementando las correcciones a un bucle necesarias
+  para una mejor implementación de las restricciones provenientes de
+  los resultados experimentales de detección directa. Debemos crear
+  también una interfase en Python para hacer los llamados a los
+  diferentes programs que nos permitan determinar las regiones del
+  espacio de parámetros que son compatibles con los datos de
+  oscilaciones de neutrinos. Paralelamente debemos comparar con
+  resultados analíticos de las secciones eficaces promediadas
+  térmicamente para estar seguros que los resultados de MicrOMEGAs
+  estén correctos.
 
   Durante este período el profesor Óscar Zapata realizará la pasantía
-  descrita en la Actividad~\ref{sec:actividades}.~\ref{item:act2} y se
+  descrita en la Actividad~\ref{sec:actividades}.\ref{item:act2} y se
   contara con la visita del Dr. Carlos Yaguna detallada en al
-  Actividad~\ref{sec:actividades}.~\ref{item:act2}.
+  Actividad~\ref{sec:actividades}.\ref{item:act2}.
 \end{darkmatter}
 
   Se entregará el informe correspondiente.
 
 \item \textbf{meses 9-12} En esta parte se continuará con la
-  paralelizarán los demás códigos para correrlos en el Grid y se
+  paralelización de los demás códigos para correrlos en el Grid y se
   obtendrán y analizarán los resultados numéricos de los modelos bajo
   consideración.  Durante este período el profesor Diego Restrepo
   realizará la pasantía descrita en la
-  Actividad~\ref{sec:actividades}.~\ref{item:act5}, y se
-  contara con la visita del Dr. Diego Aristizábal detallada en al
-  Actividad~\ref{sec:actividades}.~\ref{item:act4}. Así mismo el
+  Actividad~\ref{sec:actividades}.\ref{item:act5}, y se contara con
+  la visita del Dr. Diego Aristizábal detallada en al
+  Actividad~\ref{sec:actividades}.\ref{item:act4}. Así mismo el
   estudiante de doctorado realizará su pasantía doctoral detallada en
-  la Actividad ~\ref{sec:actividades}.~\ref{item:act6}. Durante está
+  la Actividad ~\ref{sec:actividades}.\ref{item:act6}. Durante está
   parte se presentarán resultados parciales en un evento
   internacional.
 
   A esté punto se espera tener todas las plataformas de computación
-  distribuidas de la Universidad a la infraestructura de Grid
-  Colombia. 
+  distribuidas de la Universidad conectadas a la infraestructura de
+  Grid Colombia.
 
   Se entregará el informe correspondiente.
 
@@ -1363,10 +1377,10 @@ de cada periodo
   rotura trilineal de paridad $R$ con operadores de violación de
   número leptónico, con el gravitino como materia oscura inestable, y
   otro sobre las implicaciones fenomenológicas del seesaw radiativo en
-  aceleradores de partículas y en experimentos de detección directa de
-  materia oscura. Durante este período el profesor Luis Alfredo Muñoz
+  las tres fronteras de la física de partículas y la
+  cosmología. Durante este período el profesor Luis Alfredo Muñoz
   realizará la pasantía descrita en la
-  Actividad~\ref{sec:actividades}.~\ref{item:act8}. 
+  Actividad~\ref{sec:actividades}.~\ref{item:act8}.
 
   Con la experiencia adquirida en el desarrollo del proyecto se
   realizará el \emph{Workshop on Computational High Energy Physics},
